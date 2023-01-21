@@ -890,6 +890,7 @@ footer fieldset input {
   border: none;
   width: min-content;
   padding: 1rem;
+  color: #fff;
 }
 
 footer .flex:last-child {
