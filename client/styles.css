@@ -11,37 +11,30 @@
     box-sizing: border-box;
 }
 
-
-
 ul {
     list-style: none;
 }
 
-
-
-body {
-   background-image: url("./images/landing-image.png");
+.hero-section {
+    background-image: url("./images/landing-image.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
-    background-color:transparent;
-    /* position: fixed; */
+    background-color: transparent;
+    width: 100%;
 }
 
-
-
 nav {
-    width: 80%;
-    padding: 1rem;
-    margin: 0 auto;
+    position: fixed;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: -webkit-fill-available;
+    margin: 1rem 3rem;
 }
-
-
 
 nav ul {
     display: flex;
