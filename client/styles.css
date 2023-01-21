@@ -1,3 +1,8 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
 *,
 *::before,
 *::after {
@@ -167,5 +172,19 @@ header, .hero-section , .hero-section-left , .hero-section-right{
 
 .hero-section-left , .hero-section-right{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-section-right img{
+    height: 20rem;
+    width: auto;
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
 
 }
