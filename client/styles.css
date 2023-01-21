@@ -119,9 +119,6 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 
 
 
-header, .hero-section, .hero-section-left, .hero-section-right {
-  /* border: 2px solid red; */]
-}
 
 .hero-section {
   height: 100vh;
@@ -599,7 +596,7 @@ span {
   /* border: 2px solid red; */
 }
 
-.card .top img {}
+
 
 .vertical {
   border-left: 2px solid #3C295F;
@@ -666,6 +663,13 @@ width: 80%;
 /* sponser 
  */
 
+ .our-sponser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
  .sponsers{
   display: flex;
   flex-direction: column;
@@ -679,7 +683,7 @@ width: 80%;
  .sponsers-logo{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
  }
 
@@ -704,6 +708,11 @@ color: #737373;
   padding: 25px 25px ;
   height: 150px;
   width: 150px;
+  
+ }
+
+ .our-sponser h1{
+  line-height: 2rem;
  }
 
 
