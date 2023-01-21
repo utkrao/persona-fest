@@ -118,9 +118,6 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 
 
 
-header, .hero-section, .hero-section-left, .hero-section-right {
-  /* border: 2px solid red; */]
-}
 
 .hero-section {
   height: 100vh;
@@ -601,7 +598,7 @@ span {
   /* border: 2px solid red; */
 }
 
-.card .top img {}
+
 
 .vertical {
   border-left: 2px solid #3C295F;
@@ -668,6 +665,13 @@ width: 80%;
 /* sponser 
  */
 
+ .our-sponser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
  .sponsers{
   display: flex;
   flex-direction: column;
@@ -681,7 +685,7 @@ width: 80%;
  .sponsers-logo{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
  }
 
@@ -706,6 +710,11 @@ color: #737373;
   padding: 25px 25px ;
   height: 150px;
   width: 150px;
+  
+ }
+
+ .our-sponser h1{
+  line-height: 2rem;
  }
 
 
@@ -743,4 +752,63 @@ color: #3C2B62;
 }
 
 
+
+
+
+@media screen and (max-width: 1127px) {  
+  .list-of-events h1{
+    font-size: 20px;
+  }
+
+  .list-of-events img{
+    height: 80%;
+    width: 80%;
+  }
+
+  .list-of-events li{
+    font-size: 10px;
+  }
+
+  .sponser-logo img{
+    padding: 25px 25px ;
+    height: 120px;
+    width: 100px;
+   }
+
+   .sponsers h1{
+
+  
+   
+    font-size: 15px;
+  
+    
+     }
+
+     .our-sponser img{
+      width: 34%;
+     }
+
+     .video-section iframe{
+
+      height: 60%;
+      width: 65%;
+      
+      }
+}
+
+
+@media screen and (max-width: 860px) {  
+  .video-section iframe{
+
+    height: 49%;
+    width: 59%;
+    
+    }
+
+    
+ }
+@media screen and (max-width: 827px) {  
+ .list-of-events{
+  flex-direction: column;
+ }
 }
