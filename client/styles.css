@@ -222,9 +222,39 @@ nav{
 
 
 
+/* persona about */
 
+.about-persona {
+    height: 80vh;
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-@media screen and (max-width: 600px) {
+.about-persona-text {
+    width: 60%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #464646;
+}
+
+.about-image {
+    width: 30%;
+}
+
+.dash-image {
+    width: 15rem;
+}
+
+.about-content {
+    padding: 20px 20px 0 0;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #464646;
+}
+
+@media screen and (max-width: 992px) {
     nav {
         width: 90%;
     }
