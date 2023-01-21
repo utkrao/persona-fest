@@ -114,7 +114,47 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
     transform: rotateZ(-45deg) translate(0.6rem, -0.1rem);
 }
 
-@media screen and (max-width: 600px) {
+
+/* persona about */
+
+.about-persona {
+    height: 80vh;
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-persona-text {
+    width: 60%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #464646;
+}
+
+.about-image {
+    width: 30%;
+}
+
+.dash-image {
+    width: 15rem;
+}
+
+.about-content {
+    padding: 20px 20px 0 0;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #464646;
+}
+
+
+@media screen and (max-width: 1400px){
+    .about-content{
+        font-size: 20px;
+    }    
+}
+
+@media screen and (max-width: 992px) {
     nav {
         width: 90%;
     }
@@ -148,7 +188,6 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 
 .logo  img {
    width: auto;
-
 }
   
 
@@ -195,10 +234,7 @@ header, .hero-section , .hero-section-left , .hero-section-right{
     color: rgb(250, 250, 250);
     font-weight: 150px;
     line-height: 4px;
-
     /* border: 2px solid red; */
-
-    
 }
 
 
