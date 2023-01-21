@@ -10,7 +10,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+  }
 ul {
     list-style: none;
 }
@@ -114,37 +116,6 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
     transform: rotateZ(-45deg) translate(0.6rem, -0.1rem);
 }
 
-@media screen and (max-width: 600px) {
-    nav {
-        width: 90%;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    header {
-        position: fixed;
-        background-color: initial;
-    }
-    nav ul {
-        position: absolute;
-        top: 0;
-        left: 0;
-        flex-direction: column;
-        height: 100%;
-        align-items: center;
-      
-        background-color: #fff;
-        transform: translateX(-20rem);
-        transition: transform 0.5s ease-in-out;
-    }
-    nav ul li {
-        padding: 2rem 4rem;
-        width: 100%;
-    }
-    nav ul li:not(:last-child) {
-        border-bottom: 1px solid #ccc;
-    }
-}
 
 .logo  img {
    width: auto;
@@ -234,3 +205,82 @@ border-radius: 25.5px;
     color: white;
     text-align: center;
 }
+
+.logo , ul , header , nav{
+    /* border: 2px solid red; */
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 90%;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    header {
+        position: fixed;
+        background-color: initial;
+    }
+    nav ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+      
+        background-color: #fff;
+        transform: translateX(-20rem);
+        transition: transform 0.5s ease-in-out;
+    }
+    nav ul li {
+        padding: 2rem 4rem;
+        width: 100%;
+    }
+    nav ul li:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .persona-fest h1{
+     
+        font-size: 60px;
+        
+    }
+    
+    .persona-date h2{
+        
+        font-size: 34px;
+      
+    
+        
+    }
+
+    .hero-section-right img{
+        height: 17rem;
+        
+    }
+
+    .logo  img {
+        height: 6rem;
+        width: 12rem;
+     
+     }
+}
+
