@@ -32,15 +32,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: -webkit-fill-available;
-  margin: 1rem 3rem;
+  height: 10vh;
+  z-index: 999;
 }
 
 nav ul {
   display: flex;
-}
-
-nav ul li {
-  padding: 1rem;
+  gap: 3rem;
 }
 
 nav ul li a {
@@ -79,12 +77,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  position: relative;
   transition: all 0.5s;
+  transform: translate(-24px, 10px);
 }
 
 .hamburger-menu .line {
-  background-color: #000;
+  background-color: #fff;
   height: 3px;
   width: 100%;
   -webkit-transition: all 0.3s;
@@ -113,20 +111,15 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
   transform: rotateZ(-45deg) translate(0.6rem, -0.1rem);
 }
 
-
-
 .logo img {
-  height: 9rem;
-  width: 17rem;
-
+  width: 40%;
 }
 
 
 
 
 header, .hero-section, .hero-section-left, .hero-section-right {
-  /* border: 2px solid red; */
-
+  /* border: 2px solid red; */]
 }
 
 .hero-section {
@@ -140,7 +133,6 @@ header, .hero-section, .hero-section-left, .hero-section-right {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .hero-section-right img {
@@ -170,19 +162,11 @@ header, .hero-section, .hero-section-left, .hero-section-right {
   color: rgb(250, 250, 250);
   font-weight: 150px;
   font-size: 50px;
-  /* line-height: 4rem; */
-
-  /* border: 2px solid red; */
-
-
 }
 
 
 .dash img {
-  /* border: 2px solid red; */
   width: 50%;
-  /* line-height: 4px; */
-
 }
 
 
@@ -192,23 +176,15 @@ header, .hero-section, .hero-section-left, .hero-section-right {
   height: 51px;
   justify-content: center;
   align-items: center;
-
-
   background: #FF5C00;
   border-radius: 25.5px;
-
 }
 
 .register-now a {
   font-family: 'Poppins', sans-serif;
-
   text-decoration: none;
   color: white;
   text-align: center;
-}
-
-.logo, ul, header, nav {
-  /* border: 2px solid red; */
 }
 
 nav {
@@ -216,9 +192,16 @@ nav {
   justify-content: space-evenly;
 }
 
-
-
-
+.marquee {
+  position: relative;
+  width: 80%;
+  height: 32px;
+  margin: auto;
+  border-radius: 4px;
+  transform: translateY(-15px);
+  background: linear-gradient(90deg, #1F7D60 0%, #00C2FF 100%);
+  z-index: 998;
+}
 
 
 
@@ -227,15 +210,14 @@ nav {
 /* persona about */
 
 .about-persona {
-  height: 80vh;
-  padding: 2rem 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
   background-image: url(./images/persona-background.png);
   background-repeat: no-repeat;
   background-size: contain;
-
+  transform: translateY(-3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-persona-text {
@@ -243,6 +225,10 @@ nav {
   height: auto;
   font-family: 'Poppins', sans-serif;
   color: #464646;
+}
+
+.about-persona-text h1 {
+  font-size: 70px;
 }
 
 .about-image {
@@ -258,46 +244,10 @@ nav {
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
   color: #464646;
+  font-size: 30px;
 }
 
-@media screen and (max-width: 992px) {
-  .about-persona {
-    flex-direction: column;
-  }
-
-  nav {
-    width: 90%;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-  }
-
-  nav ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-
-    background-color: #fff;
-    transform: translateX(-25rem);
-    transition: transform 0.5s ease-in-out;
-  }
-
-  nav ul li {
-    padding: 2rem 4rem;
-    width: 100%;
-  }
-
-  nav ul li:not(:last-child) {
-    border-bottom: 1px solid #ccc;
-  }
-}
-
-
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   .persona-fest h1 {
     font-size: 60px;
   }
@@ -313,7 +263,13 @@ nav {
   .logo img {
     height: 6rem;
     width: 12rem;
+  }
+  .about-persona-text h1 {
+    font-size: 40px;
+  }
 
+  .about-content {
+    font-size: 24px;
   }
 }
 
@@ -321,38 +277,79 @@ nav {
   nav {
     display: flex;
     justify-content: space-between;
+    padding: 0 5rem;
   }
 
   .logo img {
-    height: 80%;
-    width: 80%;
-
+    width: 100%;
   }
 
   nav ul li a {
     font-size: 80%;
   }
-
 }
 
-
-@media screen and (max-width: 1072px) {
-  .logo img {
-    height: 60%;
-    width: 60%;
-
+@media screen and (max-width: 992px) {  
+  .mobile-menu-icon {
+    display: block;
+    align-items: center;
   }
-}
 
-.marquee {
-  position: relative;
-  width: 80%;
-  height: 32px;
-  margin: auto;
-  border-radius: 4px;
-  transform: translateY(-15px);
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: #fff;
+    transform: translateX(-25rem);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  nav ul li {
+    padding: 2rem 4rem;
+    width: 100%;
+  }
 
-  background: linear-gradient(90deg, #1F7D60 0%, #00C2FF 100%);
+  nav ul li a {
+    color: #000;
+  }
+  
+  nav ul li:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+
+  .about-persona {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5rem;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .about-persona-text {
+    width: 90%;
+    margin-top: 50px;
+  }
+  
+  .about-image {
+    width: 50%;
+  }
+
+  .about-persona-text h1 {
+    font-size: 28px;
+  }
+
+  .about-content {
+    font-size: 16px;
+  }
 }
 
 /* counter section  */
@@ -372,7 +369,6 @@ nav {
   --m-auto: 0 auto;
   --white: #fff;
   --bg-hero: #251c5a;
-
   --bg-item: #5d46e2;
 }
 
@@ -425,9 +421,6 @@ section:not(#section_counter) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 2rem;
-
-
-
 }
 
 span {
@@ -447,18 +440,14 @@ span {
   transition: all 0.5s ease-in-out;
   transform: translateY(6rem);
   animation: slide-up;
-
 }
 
 .one, .three {
   background-color: #3C295F;
-
 }
 
 .two, .four {
   background-color: #FF5C00;
-  ;
-
 }
 
 .one:hover, .three:hover {
@@ -530,11 +519,6 @@ span {
   .counter-item h1 {
     font-size: 80%;
   }
-
-
-
-
-
 }
 
 .counter-part {
@@ -550,9 +534,6 @@ span {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
-
-
   background-image: url(./images/event-category.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -568,7 +549,6 @@ span {
 }
 
 .cards-list {
-
   /* border: 2px solid red; */
   z-index: 0;
   width: 80%;
