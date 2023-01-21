@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ICONS CSS */
+
+.bi {
+  padding-right: 5px;
+}
+
+/* Accordion CSS */
+
+.accordion-container {
+  margin: 50px auto;
+  max-width: 60%;
+}
+
+.accordion-out {
+  border: solid 3px purple;
+  border-radius: 20px;
+}
