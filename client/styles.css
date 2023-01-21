@@ -255,6 +255,9 @@ nav{
 }
 
 @media screen and (max-width: 992px) {
+    .about-persona{
+        flex-direction: column;
+    }
     nav {
         width: 90%;
     }
@@ -313,4 +316,38 @@ nav{
      
      }
 }
+
+@media screen and (max-width: 1200px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo  img {
+        height: 80%;
+        width: 80%;
+     
+     }
+
+     nav ul li a{
+        font-size: 80%;
+     }
+    
+}
+
+
+@media screen and (max-width: 1072px) {
+  
+
+    .logo  img {
+        height: 60%;
+        width: 60%;
+     
+     }
+
+    
+    
+}
+
+
 
