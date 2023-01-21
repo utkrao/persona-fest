@@ -189,12 +189,14 @@ header, .hero-section , .hero-section-left , .hero-section-right{
 
 }
 
-.persona-fest{
+.persona-fest h1{
     /* border: 2px solid red; */
     font-family: 'Poppins', sans-serif; 
     color: white;
     text-align: left;
-    line-height: 4px;
+    line-height: 2rem;
+    font-size: 60px;
+    
 }
 
 .persona-date{
