@@ -2,17 +2,3 @@ nav{
     background-color:#291F64 ;
     position: relative;
 }
-
-.cultural-events{
-    display: flex;
-    align-items: flex-end;
-    height: 28vh;
-    background-image: url(../images/cultural-events.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.cultural-events h1{
-    padding-left:1.8rem ;
-   
-}
