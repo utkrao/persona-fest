@@ -39,6 +39,21 @@ nav {
     display: inline-block;
 }
 
+p {
+    padding-top: 7rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#textbold {
+    color: #6f0098;
+}
+
+.patron-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 500px) {
     html {
         font-size: 3px;
@@ -49,14 +64,4 @@ nav {
     html {
         font-size: 2px;
     }
-}
-
-p {
-    padding-top: 7rem;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-#textbold {
-    color: #6f0098;
 }
