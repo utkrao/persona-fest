@@ -686,7 +686,7 @@ footer .flex:last-child a {
 .email-field {
   display: flex;
   align-items: center;
-  border: 1px solid;
+  border: 1px solid #fff;
   width: max-content;
   height: 40px;
 }
@@ -708,7 +708,6 @@ footer .flex:last-child a {
 }
 
 footer .flex:last-child a:hover {
-  background-color: var(--secondary);
   color: var(--gray);
 }
 
@@ -720,6 +719,15 @@ footer .flex:last-child a:hover {
   width: -moz-fit-content;
 }
 
+a:not([href]):not([class]), a:not([href]):not([class]) {
+  color: #fff;
+}
+
+.flex-content p {
+  color: #fff !important;
+}
+
+.flex-content a,
 .flex-content a,
 .flex-content button {
   transition: 0.5s;
@@ -732,7 +740,6 @@ footer .flex:last-child a:hover {
 
 .flex-content h1,
 .flex-content h2,
-.flex-content h3,
 .flex-content h4,
 .flex-content h5,
 .flex-content h6 {
