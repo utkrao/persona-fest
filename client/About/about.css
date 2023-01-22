@@ -1,56 +1,62 @@
-
-nav{
-    background-color:#291F64 ;
-    position: relative;
+nav {
+    background-color: #291F64;
 }
 
-.container{
+.container {
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    margin: 5rem auto;
+    padding-top: 12rem !important;
+    margin-bottom: 100px;
     color: #464646;
     background-image: url(https://ibb.co/qRXmkB2);
 }
-#heading{
+
+#heading {
     font-size: 55px;
 }
-.rectangle1{
+
+.rectangle1 {
     height: 1.45rem;
     width: 14rem;
     background-color: #FF7A00;
     display: inline-block;
 }
-.rectangle2{
+
+.rectangle2 {
     height: 1.45rem;
     width: 14rem;
     background-color: #00A08D;
     display: inline-block;
 }
-.rectangle3{
+
+.rectangle3 {
     height: 1.45rem;
     width: 14rem;
     background-color: #A800E3;
     display: inline-block;
 }
-@media screen and (max-width: 500px){
-    html{
-        font-size: 3px ;
-    }
-}
-@media screen and (max-width: 300px){
-    html{
-        font-size: 2px ;
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 3px;
     }
 }
 
-p{
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 2px;
+    }
+}
+
+p {
     padding-top: 7rem;
     font-weight: bold;
     font-size: 3rem;
 }
-#textbold{
-    color:#6f0098;
+
+#textbold {
+    color: #6f0098;
 }
