@@ -207,6 +207,8 @@ iframe {
     height: 250px !important;
   }
 }
+
+
 @media only screen and (max-width: 768px) {
   .section2 .sec2addr {
     font-size: 14px;

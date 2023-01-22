@@ -54,7 +54,7 @@ nav ul li a:hover {
   font-weight: 600;
 }
 
-a:after {    
+a:after {
   background: none repeat scroll 0 transparent;
   bottom: 0;
   content: "";
@@ -65,9 +65,9 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 main {
@@ -813,11 +813,6 @@ fieldset {
   color: var(--secondary);
 }
 
-
-
-
-
-
 @media screen and (max-width: 1440px) {
   .persona-fest h1 {
     font-size: 60px;
@@ -844,8 +839,6 @@ fieldset {
     font-size: 24px;
   }
 }
-
-
 
 @media screen and (max-width: 1200px) {
   nav {
@@ -942,7 +935,7 @@ fieldset {
   }
 }
 
-@media (max-width:920px) {
+@media (max-width: 920px) {
   .flex {
     flex-wrap: wrap;
   }
@@ -1040,10 +1033,7 @@ fieldset {
   }
 }
 
-
-.active::after{
-
+.active::after {
   width: 100%;
   left: 0;
-  
 }
