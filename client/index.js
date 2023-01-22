@@ -83,3 +83,16 @@ let CounterObserver = new IntersectionObserver(
 );
 
 CounterObserver.observe(section_counter);
+
+
+
+
+//active class
+
+
+$(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});
