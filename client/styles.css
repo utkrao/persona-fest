@@ -846,6 +846,8 @@ fieldset {
   }
 }
 
+
+
 @media screen and (max-width: 1200px) {
   nav {
     display: flex;
