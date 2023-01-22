@@ -18,6 +18,11 @@ nav {
     font-size: 55px;
 }
 
+.patron-grid {
+    display: gird;
+    grid-template-columns: 1fr 1fr;
+}
+
 .rectangle1 {
     height: 1.45rem;
     width: 14rem;
