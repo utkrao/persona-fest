@@ -80,38 +80,17 @@ width: 70%;
     justify-content: center;
     align-items: center;
     margin-top: 70px;
-    /* height: 80vh; */
-    /* border: 2px solid red; */
+    
     width: 100%;
     
 }
 
-
 .vishwashanti-sangeet-kala .dash{
-  /* border: 2px solid red; */
+
   width: 68%;
     
 }
 
-
-
-
-
-
-
-
-
-
-
- 
-  
-
-  
-  
- 
-  
-  /* Support HTML CSS ---------------------------------- */
-  
   .container {
     margin: auto;
     min-height: 50vh;
@@ -151,17 +130,76 @@ width: 70%;
     gap: 4rem;
   }
   .color {
-    width: 220px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    width: 100%;
     height: 120px;
     background-color: black;
     padding: 2rem;
     border-radius: 0.4rem;
-    color: black;
+    background: #F5F5F5;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .color:hover {
+    transition: all 0.1s ease-in-out;
+
+    transform: scale(0.9, 0.9);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25),
+      0.3px 1px 2px 2px rgba(0, 0, 0, 0.22);
   }
 
   .items{
      width: 80%;
   }
+
+  /* //checkbox controls  */
+  .container-color  label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 0px;
+    text-align: justify;
+    
+    color: #000000;
+
+  }
+
+
+
+.color button{
+  border: 0px;
+  background: #443C78;
+/* box-shadow: 0px 0px 0px rgba(136, 136, 136, 0.5); */
+border-radius: 5px;
+padding: 1px 0px;
+color: white;
+width: 72px;
+padding-left: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+text-align: justify;
+
+}
+
+
+
+.orange button{
+  background: #E94600;
+  border: 0px;
+}
+
+/* .color-1 .h4{
+  color: black;
+} */
+
   
   @media screen and (max-width: 1180px) {
     .container-color {
@@ -229,11 +267,17 @@ width: 70%;
    .part-bottom-left input{
     margin:3px
    }
+  
+
+   .color span {
+        font-size: 10px;
+   }
+
 
     
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 450px) {
    .vishwashanti-sangeet-kala .title{
     line-height: 10px;
     font-size: 10px;
@@ -248,10 +292,47 @@ width: 70%;
     background-position-y: 35px;
 
    }
+
+   .container-color label{
+    font-size: 14px;
    }
+
+   
+   
+   .container-color strong{
+    font-size: 8px;
+   }
+
+   .container-color button{
+   
+    font-size: 10px;
+    width: 85%;
+
+    
+   }
+   .container-color span{
+    
+    font-size: 9px;
+
+   
+   }
+
+   .color{
+    width: 140px;
+    height: 100px;
+    
+   }
+  .container-color{
+    gap: 2rem;
+  }
+
+  .container{
+    padding: 0rem;
+  }
+   }
+ 
+  
+  
  
  
 
-  /* .participants-details ,.vishwashanti-sangeet-kala , .title , .dash , .events , .container{
-    border: 2px solid red;
-  } */
