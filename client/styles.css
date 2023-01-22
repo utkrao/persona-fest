@@ -50,7 +50,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid #262626;
+  color: #fff;
+  font-weight: 600;
+}
+
+a:after {    
+  background: none repeat scroll 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 main {
@@ -169,13 +186,21 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
   align-items: center;
   background: #ff5c00;
   border-radius: 25.5px;
+  cursor: pointer;
 }
 
 .register-now a {
+  all: unset;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: white;
+  font-weight: 700;
   text-align: center;
+}
+
+.register-now:after {
+  position: fixed;
+  background-color: transparent;
 }
 
 nav {
@@ -198,6 +223,8 @@ nav {
 
 .about-persona {
   height: 100vh;
+  width: 100%;
+  margin: 0 auto;
   background-image: url(./images/persona-background.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -208,7 +235,7 @@ nav {
 }
 
 .about-persona-text {
-  width: 60%;
+  width: 55%;
   height: auto;
   font-family: "Poppins", sans-serif;
   color: #464646;
@@ -817,6 +844,8 @@ fieldset {
     font-size: 24px;
   }
 }
+
+
 
 @media screen and (max-width: 1200px) {
   nav {
