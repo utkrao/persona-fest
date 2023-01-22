@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -117,17 +117,14 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
   width: 40%;
 }
 
-
-
-
-
 .hero-section {
   height: 100vh;
   display: flex;
   flex-direction: row;
 }
 
-.hero-section-left, .hero-section-right {
+.hero-section-left,
+.hero-section-right {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -143,31 +140,27 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 .hero-section-left {
   display: flex;
   flex-direction: column;
-
 }
 
 .persona-fest h1 {
   /* border: 2px solid red; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
   text-align: left;
   /* line-height: 2rem; */
   font-size: 80px;
-
 }
 
 .persona-date h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgb(250, 250, 250);
   font-weight: 150px;
   font-size: 50px;
 }
 
-
 .dash img {
   width: 50%;
 }
-
 
 .register-now {
   display: flex;
@@ -175,12 +168,12 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
   height: 51px;
   justify-content: center;
   align-items: center;
-  background: #FF5C00;
+  background: #ff5c00;
   border-radius: 25.5px;
 }
 
 .register-now a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: white;
   text-align: center;
@@ -198,13 +191,9 @@ nav {
   margin: auto;
   border-radius: 4px;
   transform: translateY(-15px);
-  background: linear-gradient(90deg, #1F7D60 0%, #00C2FF 100%);
+  background: linear-gradient(90deg, #1f7d60 0%, #00c2ff 100%);
   z-index: 998;
 }
-
-
-
-
 
 /* persona about */
 
@@ -222,7 +211,7 @@ nav {
 .about-persona-text {
   width: 60%;
   height: auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #464646;
 }
 
@@ -241,11 +230,10 @@ nav {
 .about-content {
   padding: 20px 20px 0 0;
   font-size: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #464646;
   font-size: 30px;
 }
-
 
 /* counter section  */
 
@@ -266,7 +254,7 @@ nav {
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -334,21 +322,25 @@ span {
   animation: slide-up;
 }
 
-.one, .three {
-  background-color: #3C295F;
+.one,
+.three {
+  background-color: #3c295f;
 }
 
-.two, .four {
-  background-color: #FF5C00;
+.two,
+.four {
+  background-color: #ff5c00;
 }
 
-.one:hover, .three:hover {
+.one:hover,
+.three:hover {
   background-color: #4b1ca3;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
-.two:hover, .four:hover {
+.two:hover,
+.four:hover {
   background-color: #c7520e;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -407,11 +399,9 @@ span {
   height: 50vh;
 }
 
-
 /* event categroy  */
 
 .event-category {
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -424,10 +414,8 @@ span {
 }
 
 .heading {
-
   /* border: 2px solid red; */
   width: 75%;
-
 }
 
 .cards-list {
@@ -443,13 +431,11 @@ span {
   flex-wrap: wrap;
 }
 
-
 .card:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
-
 
 /* 
 @media all and (max-width: 500px) {
@@ -460,9 +446,7 @@ span {
 }
  */
 
-
 .card {
-
   width: 250px;
   height: 220px;
   border-radius: 19px;
@@ -471,7 +455,8 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   transition: 0.4s;
 }
 
@@ -482,8 +467,6 @@ span {
   height: 70%;
   /* border: 2px solid red; */
 }
-
-
 
 /* .vertical {
   border-left: 2px solid #3C295F;
@@ -499,24 +482,21 @@ span {
   /* border: 2px solid red; */
   background: rgba(210, 210, 210, 0.33);
   border-radius: 0 0 19px 19px;
-
-
 }
 
 .card .bottom h2 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 700;
 
   font-size: 15px;
   margin: auto;
   text-align: center;
-  color: #3C295F;
-
+  color: #3c295f;
 }
 
 .persona-dates {
   width: 20%;
-  border-right: 2px solid #3C295F;
+  border-right: 2px solid #3c295f;
 }
 
 /* VIDEOS  */
@@ -529,23 +509,19 @@ span {
 }
 
 .video-section h1 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 4px;
   /* identical to box height */
 
-
   color: #737373;
-
 }
 
 .video-section iframe {
-
   height: 80%;
   width: 80%;
-
 }
 
 /* sponser 
@@ -565,7 +541,7 @@ span {
   align-items: center;
   /* border: 2px solid red; */
   height: 35vh;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .sponsers-logo {
@@ -576,15 +552,12 @@ span {
 }
 
 .sponsers h1 {
-
-
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 4px;
   /* identical to box height */
-
 
   color: #737373;
 }
@@ -597,13 +570,11 @@ span {
   padding: 25px 25px;
   height: 150px;
   width: 150px;
-
 }
 
 .our-sponser h1 {
   line-height: 2rem;
 }
-
 
 /* //list of events  */
 
@@ -616,7 +587,7 @@ span {
 }
 
 .list-of-events h1 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -624,21 +595,18 @@ span {
   display: flex;
   align-items: center;
 
-  color: #FF5C00;
+  color: #ff5c00;
 }
 
 .list-of-events li {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 36px;
 
-  color: #3C2B62;
+  color: #3c2b62;
 }
-
-
-
 
 /*********
              FOOTER
@@ -710,7 +678,7 @@ footer .flex:last-child a {
 
 .email-field input::placeholder {
   color: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 footer .flex:last-child a:hover {
@@ -726,20 +694,31 @@ footer .flex:last-child a:hover {
   width: -moz-fit-content;
 }
 
-.flex-content a, .flex-content button {
+.flex-content a,
+.flex-content button {
   transition: 0.5s;
 }
 
-.flex-content a, .flex-content p {
+.flex-content a,
+.flex-content p {
   font-size: 14px;
 }
 
-.flex-content h1, .flex-content h2, .flex-content h3, .flex-content h4, .flex-content h5, .flex-content h6 {
+.flex-content h1,
+.flex-content h2,
+.flex-content h3,
+.flex-content h4,
+.flex-content h5,
+.flex-content h6 {
   color: var(--primary);
   font-weight: 600;
 }
 
-.flex-contenta, .flex-contentbutton, .flex-contentinput, .flex-contenttextarea, .flex-contentselect {
+.flex-contenta,
+.flex-contentbutton,
+.flex-contentinput,
+.flex-contenttextarea,
+.flex-contentselect {
   outline: none !important;
 }
 
@@ -751,7 +730,8 @@ fieldset {
   color: var(--primary);
 }
 
-.flex, .fixed_flex {
+.flex,
+.fixed_flex {
   display: flex;
 }
 
@@ -923,12 +903,26 @@ fieldset {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .counter-item {
+    width: 80%;
+    height: 90%;
+  }
+
+  .counter-item h1 {
+    font-size: 80%;
+  }
+}
+
 @media (max-width:920px) {
   .flex {
     flex-wrap: wrap;
   }
 
-  .padding_1x, .padding_2x, .padding_3x, .padding_4x {
+  .padding_1x,
+  .padding_2x,
+  .padding_3x,
+  .padding_4x {
     padding: 1rem;
   }
 
@@ -936,12 +930,13 @@ fieldset {
     padding: 0.5rem 1rem;
   }
 
-  a, p {
+  a,
+  p {
     font-size: 12px;
   }
 }
 
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
   footer .flex:first-child {
     flex-wrap: wrap;
   }
@@ -951,13 +946,13 @@ fieldset {
   }
 }
 
-@media (max-width:920px) {
+@media (max-width: 920px) {
   footer .flex:last-child .flex-content:last-child {
     text-align: left;
   }
 }
 
-@media (max-width:320px) {
+@media (max-width: 320px) {
   footer .flex:first-child .flex-content {
     flex: 1 1 100%;
   }
