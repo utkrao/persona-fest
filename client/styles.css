@@ -51,7 +51,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid #262626;
+  color: #fff;
+  font-weight: 600;
+}
+
+a:after {    
+  background: none repeat scroll 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 main {
