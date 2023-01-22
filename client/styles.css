@@ -309,7 +309,7 @@ body {
 
 .counter-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
   gap: 2rem;
 }
 
@@ -323,12 +323,14 @@ span {
 }
 
 .counter-item {
-  background: var(--bg-item);
-  padding: 1.5rem 0rem;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   /* border-radius: 1rem; */
   transition: all 0.5s ease-in-out;
-  transform: translateY(6rem);
   animation: slide-up;
 }
 
@@ -859,6 +861,11 @@ fieldset {
     align-items: center;
   }
 
+  .counter-grid {
+    margin: 0 2rem;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
   .hero-section {
     flex-direction: column;
     justify-content: center;
@@ -913,17 +920,6 @@ fieldset {
 
   .about-content {
     font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .counter-item {
-    width: 80%;
-    height: 90%;
-  }
-
-  .counter-item h1 {
-    font-size: 80%;
   }
 }
 
