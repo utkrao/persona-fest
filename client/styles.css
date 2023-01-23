@@ -1147,3 +1147,71 @@ fieldset {
       font-size: 1rem;
     }
   }
+
+  @media screen and (max-width: 615px) {
+    .video-section iframe {
+      height: 40%;
+    }
+    .persona-fest h1 {
+      font-size: 40px;
+    }
+    .persona-date h2 {
+      font-size: 20px;
+    }
+    .counter-item {
+      height: 12rem;
+    }
+    .counter-container-main {
+      transform: translateY(-20px);
+    }
+    .counter-item .counter {
+      font-size: 2rem;
+    }
+    .counter-text {
+      font-size: 1.5rem;
+    }
+    .event-dash img {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .video-section iframe {
+      height: 30%;
+      width: 95%;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+    .hamburger-menu {
+      transform: translate(-10px, 10px);
+    }
+    .hero-section-left {
+      margin-left: 2rem;
+    }
+    .persona-fest h1 {
+      font-size: 24px;
+    }
+    .persona-date h2 {
+      font-size: 16px;
+    }
+    .register-now {
+      display: flex;
+      width: 150px;
+      height: 30px;
+    }
+    .counter-item {
+      height: 10rem;
+    }
+    .counter-container-main {
+      transform: translateY(-10px);
+    }
+    .counter-item .counter {
+      font-size: 1.5rem;
+    }
+    .counter-text {
+      font-size: 1rem;
+    }
+  }
