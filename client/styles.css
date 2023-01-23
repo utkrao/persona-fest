@@ -1090,6 +1090,9 @@ fieldset {
     .video-section iframe {
       height: 40%;
     }
+    .video-section h1 {
+      font-size: 20px;
+    }
     .persona-fest h1 {
       font-size: 40px;
     }
@@ -1117,6 +1120,9 @@ fieldset {
     .video-section iframe {
       height: 30%;
       width: 95%;
+    }
+    .video-section h1 {
+      font-size: 14px;
     }
     nav {
       display: flex;
