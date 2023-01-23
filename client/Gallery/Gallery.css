@@ -7,7 +7,7 @@ ul {
 }
 
 nav {
-  background-color:#291F64 !important;
+  background-color: #291f64 !important;
   position: fixed;
 }
 
@@ -43,6 +43,7 @@ nav {
 .gallery .controls .buttons.active {
   background: coral;
   color: #fff;
+  border-radius: 5px;
 }
 
 .gallery .image-container {
@@ -55,10 +56,11 @@ nav {
 .gallery .image-container .image {
   height: 250px;
   width: 350px;
+  border-radius: 5px;
   overflow: hidden;
-  border: 15px solid #fff;
+  border: 5px solid #fff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  margin: 20px;
+  margin: 10px;
 }
 
 .gallery .image-container .image img {
@@ -75,4 +77,8 @@ nav {
   font-size: 46px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
+  color: #291f64 !important;
+}
+p {
+  color: black;
 }
