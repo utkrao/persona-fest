@@ -32,6 +32,7 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
 ul {
   list-style: none;
 }
@@ -88,6 +89,7 @@ nav a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 a:hover:after {
   width: 100%;
   left: 0;
@@ -554,6 +556,7 @@ span {
 }
 
 .video-section iframe {
+  margin-top: 40px;
   height: 80%;
   width: 80%;
 }
@@ -703,6 +706,7 @@ footer .flex:last-child a {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .email-field input {
@@ -894,7 +898,7 @@ fieldset {
   }
 
   nav ul li a {
-    font-size: 80%;
+    font-size: 80% !important;
   }
 }
 
@@ -967,6 +971,7 @@ fieldset {
   .about-content {
     font-size: 16px;
   }
+
   .counter-item {
     width: 100%;
     height: 90%;
@@ -993,6 +998,7 @@ fieldset {
   p {
     font-size: 12px;
   }
+
   .register-now {
     display: flex;
     width: 250px;
@@ -1060,10 +1066,12 @@ fieldset {
   .list-of-events {
     flex-direction: column;
   }
+
   .counter-grid {
     gap: 1rem;
     width: fit-content;
   }
+
   .counter-container {
     margin: 5rem 0;
   }
@@ -1076,138 +1084,143 @@ fieldset {
   }
 }
 
-@media screen and (max-width: 615px) {
-  .video-section iframe {
-    height: 40%;
+  @media screen and (max-width: 615px) {
+    .video-section iframe {
+      height: 40%;
+    }
+    .persona-fest h1 {
+      font-size: 40px;
+    }
+    .persona-date h2 {
+      font-size: 20px;
+    }
+    .counter-item {
+      height: 12rem;
+    }
+    .counter-container-main {
+      transform: translateY(-20px);
+    }
+    .counter-item .counter {
+      font-size: 2rem;
+    }
+    .counter-text {
+      font-size: 1.5rem;
+    }
+    .event-dash img {
+      width: 80%;
+    }
   }
-  .persona-fest h1 {
-    font-size: 40px;
+  
+  @media screen and (max-width: 450px) {
+    .video-section iframe {
+      height: 30%;
+      width: 95%;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+    .hamburger-menu {
+      transform: translate(-10px, 10px);
+    }
+    .hero-section-left {
+      margin-left: 2rem;
+    }
+    .persona-fest h1 {
+      font-size: 24px;
+    }
+    .persona-date h2 {
+      font-size: 16px;
+    }
+    .register-now {
+      display: flex;
+      width: 150px;
+      height: 30px;
+    }
+    .counter-item {
+      height: 10rem;
+    }
+    .counter-container-main {
+      transform: translateY(-10px);
+    }
+    .counter-item .counter {
+      font-size: 1.5rem;
+    }
+    .counter-text {
+      font-size: 1rem;
+    }
   }
-  .persona-date h2 {
-    font-size: 20px;
-  }
-  .counter-item {
-    height: 12rem;
-  }
-  .counter-container-main {
-    transform: translateY(-20px);
-  }
-  .counter-item .counter {
-    font-size: 2rem;
-  }
-  .counter-text {
-    font-size: 1.5rem;
-  }
-  .event-dash img {
-    width: 80%;
-  }
-}
 
-@media screen and (max-width: 450px) {
-  .video-section iframe {
-    height: 30%;
-    width: 95%;
+  @media screen and (max-width: 615px) {
+    .video-section iframe {
+      height: 40%;
+    }
+    .persona-fest h1 {
+      font-size: 40px;
+    }
+    .persona-date h2 {
+      font-size: 20px;
+    }
+    .counter-item {
+      height: 12rem;
+    }
+    .counter-container-main {
+      transform: translateY(-20px);
+    }
+    .counter-item .counter {
+      font-size: 2rem;
+    }
+    .counter-text {
+      font-size: 1.5rem;
+    }
+    .event-dash img {
+      width: 80%;
+    }
   }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
+  
+  @media screen and (max-width: 450px) {
+    .video-section iframe {
+      height: 30%;
+      width: 95%;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+    .hamburger-menu {
+      transform: translate(-10px, 10px);
+    }
+    .hero-section-left {
+      margin-left: 2rem;
+    }
+    .persona-fest h1 {
+      font-size: 24px;
+    }
+    .persona-date h2 {
+      font-size: 16px;
+    }
+    .register-now {
+      display: flex;
+      width: 150px;
+      height: 30px;
+    }
+    .counter-item {
+      height: 10rem;
+    }
+    .counter-container-main {
+      transform: translateY(-10px);
+    }
+    .counter-item .counter {
+      font-size: 1.5rem;
+    }
+    .counter-text {
+      font-size: 1rem;
+    }
   }
-  .hamburger-menu {
-    transform: translate(-10px, 10px);
-  }
-  .hero-section-left {
-    margin-left: 2rem;
-  }
-  .persona-fest h1 {
-    font-size: 24px;
-  }
-  .persona-date h2 {
-    font-size: 16px;
-  }
-  .register-now {
-    display: flex;
-    width: 150px;
-    height: 30px;
-  }
-  .counter-item {
-    height: 10rem;
-  }
-  .counter-container-main {
-    transform: translateY(-10px);
-  }
-  .counter-item .counter {
-    font-size: 1.5rem;
-  }
-  .counter-text {
-    font-size: 1rem;
-  }
-}
 
-@media screen and (max-width: 615px) {
-  .video-section iframe {
-    height: 40%;
-  }
-  .persona-fest h1 {
-    font-size: 40px;
-  }
-  .persona-date h2 {
-    font-size: 20px;
-  }
-  .counter-item {
-    height: 12rem;
-  }
-  .counter-container-main {
-    transform: translateY(-20px);
-  }
-  .counter-item .counter {
-    font-size: 2rem;
-  }
-  .counter-text {
-    font-size: 1.5rem;
-  }
-  .event-dash img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .video-section iframe {
-    height: 30%;
-    width: 95%;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-  }
-  .hamburger-menu {
-    transform: translate(-10px, 10px);
-  }
-  .hero-section-left {
-    margin-left: 2rem;
-  }
-  .persona-fest h1 {
-    font-size: 24px;
-  }
-  .persona-date h2 {
-    font-size: 16px;
-  }
-  .register-now {
-    display: flex;
-    width: 150px;
-    height: 30px;
-  }
-  .counter-item {
-    height: 10rem;
-  }
-  .counter-container-main {
-    transform: translateY(-10px);
-  }
-  .counter-item .counter {
-    font-size: 1.5rem;
-  }
-  .counter-text {
-    font-size: 1rem;
-  }
-}
+  .event-category a{
+    text-decoration: none;
+    color: #3C295F;
+ }

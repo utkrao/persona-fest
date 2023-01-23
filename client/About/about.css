@@ -44,18 +44,6 @@ nav {
   display: inline-block;
 }
 
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 3px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  html {
-    font-size: 2px;
-  }
-}
-
 .desc {
   padding-top: 7rem;
   font-weight: bold;
