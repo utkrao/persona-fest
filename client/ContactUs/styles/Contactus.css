@@ -8,10 +8,7 @@ nav {
   background-color: #291f64;
   position: relative;
 }
-* {
-  margin: 0px;
-  padding: 0px;
-}
+
 *,
 *:after,
 *:before {
@@ -35,7 +32,6 @@ body {
   background: #ffffff;
   color: #333;
   font-weight: normal;
-  font-size: 1em;
   font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -98,6 +94,7 @@ textarea {
 .section2 {
   width: auto;
   margin: 25px auto;
+  width: 80%;
 }
 .section2 .col2 {
   width: 48.71%;
@@ -207,7 +204,6 @@ iframe {
     height: 250px !important;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .section2 .sec2addr {
