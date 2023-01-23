@@ -25,10 +25,18 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
+    /* border: 2px solid red; */
+    width: 79%;
     
 
+}
+.participants-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .participants-details h2 {
     color: black;
@@ -38,8 +46,9 @@ nav{
 }
 
 .part-bottom{
-
-    width: 70%;
+    /* border: 2px solid red; */
+    width: 90%;
+    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -54,7 +63,7 @@ nav{
 
 .part-bottom-left input{
 background: #FAFAFA;
-padding: 10px 10px;
+padding: 5px 8px;
 margin: 8px;
 border: 1px solid #C0C0C0;
 border-radius: 10px;
@@ -209,6 +218,19 @@ color: white;
 width:155px;
 }
 
+.members{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 4px;
+/* identical to box height */
+
+text-align: justify;
+
+color: #000000;
+}
+
   
   @media screen and (max-width: 1180px) {
     .container-color {
@@ -344,6 +366,10 @@ width:155px;
 
   .container{
     padding: 0rem;
+  }
+
+  .submit-div{
+    margin-top: 25px;
   }
    }
  
