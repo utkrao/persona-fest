@@ -11,9 +11,17 @@ nav {
   position: fixed;
 }
 
-#container {
-  padding-top: 50px;
-  border: 1px solid blue;
-  height: max-content;
-  width: 600px;
+.container {
+  min-height: 100vh;
+  background: rgb(158, 35, 35);
+  padding-bottom: 100px;
+  padding-top: 12rem;
+  display: flex;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #291f64 !important;
 }
