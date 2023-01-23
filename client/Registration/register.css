@@ -1,3 +1,4 @@
+
 nav{
     background-color:#291F64 ;
     position: relative;
@@ -25,11 +26,14 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+
 }
 .participants-details h2 {
     color: black;
     font-size: 1.6rem;
     padding: 10px 10px;
+    /* border: 2px solid red; */
 }
 
 .part-bottom{
@@ -64,7 +68,271 @@ width: 70%;
 }
 
 .part-bottom-right img{
-    height: 250px;
-    width: 250px;
+    height: 230px;
+    width: 230px;
 
 }
+/* //vishwashanti events  */
+
+.vishwashanti-sangeet-kala{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    
+    width: 100%;
+    
+}
+
+.vishwashanti-sangeet-kala .dash{
+
+  width: 68%;
+    
+}
+
+  .container {
+    margin: auto;
+    min-height: 50vh;
+    max-width: 250rem;
+    padding: 2rem;
+    border-radius: 6px;
+  
+  }
+
+  .dash{
+    line-height: 1px;
+
+  }
+
+  .dash img{
+    height: 6px;
+  }
+
+  .title{
+    color: #000 !important;
+    width: 68%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 50px;
+    /* or 400% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #3B3B3B;
+  }
+  .container-color {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+  }
+  .color {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    background: #F5F5F5;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .color:hover {
+    transition: all 0.1s ease-in-out;
+
+    transform: scale(0.9, 0.9);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25),
+      0.3px 1px 2px 2px rgba(0, 0, 0, 0.22);
+  }
+
+  .items{
+     width: 80%;
+  }
+
+  /* //checkbox controls  */
+  .container-color  label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 0px;
+    text-align: justify;
+    
+    color: #000000;
+
+  }
+
+
+
+.color button{
+  border: 0px;
+  background: #443C78;
+/* box-shadow: 0px 0px 0px rgba(136, 136, 136, 0.5); */
+border-radius: 5px;
+padding: 1px 0px;
+color: white;
+width: 72px;
+padding-left: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+text-align: justify;
+
+}
+
+
+
+.orange button{
+  background: #E94600;
+  border: 0px;
+}
+
+/* .color-1 .h4{
+  color: black;
+} */
+
+  
+  @media screen and (max-width: 1180px) {
+    .container-color {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+  }
+ 
+  @media screen and (max-width: 991px) {
+    .title{
+           font-size: 18px;
+           width: 100%;
+    }
+    .container-color {
+        grid-template-columns: 1fr 1fr ;
+      }
+      .part-bottom-left input{
+    
+        
+        padding: 4px 5px;
+      
+                
+            
+        }
+
+        .part-bottom-right img{
+            height: 180px;
+            width: 180px;
+            transform: translateY(30px);
+        }
+
+    
+  }
+
+  @media screen and (max-width: 710px) {
+    .part-bottom-left input{
+        width: 120%;
+    }
+    .title{
+           font-size: 15px;
+    }
+   
+    .color{
+        width: 90%;
+    }
+    .part-bottom-left input{
+        margin:4px
+       }
+
+       .part-bottom-right img{
+        display: none;
+       }
+
+       .participants-details{
+        background-image: url("../images/persona-image.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+       }
+    
+  }
+
+
+  @media screen and (max-width: 600px) {
+   .part-bottom-left input{
+    margin:3px
+   }
+  
+
+   .color span {
+        font-size: 10px;
+   }
+
+
+    
+  }
+
+  @media screen and (max-width: 450px) {
+   .vishwashanti-sangeet-kala .title{
+    line-height: 10px;
+    font-size: 10px;
+
+   }
+   .part-bottom-left input{
+    padding: 3px 3px;
+   }
+
+   .participants-details{
+    background-position-x: 35px;
+    background-position-y: 35px;
+
+   }
+
+   .container-color label{
+    font-size: 14px;
+   }
+
+   
+   
+   .container-color strong{
+    font-size: 8px;
+   }
+
+   .container-color button{
+   
+    font-size: 10px;
+    width: 85%;
+
+    
+   }
+   .container-color span{
+    
+    font-size: 9px;
+
+   
+   }
+
+   .color{
+    width: 140px;
+    height: 100px;
+    
+   }
+  .container-color{
+    gap: 2rem;
+  }
+
+  .container{
+    padding: 0rem;
+  }
+   }
+ 
+  
+  
+ 
+ 
+
