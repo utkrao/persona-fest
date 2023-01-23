@@ -16,6 +16,7 @@ nav {
 
 #heading {
     font-size: 55px;
+    font-family: "Poppins", sans-serif;
 }
 
 .patron-grid {
@@ -25,12 +26,13 @@ nav {
 
 p {
     padding-top: 7rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 3rem;
 }
 
 #textbold {
     color: #6f0098;
+    font-family: "Poppins", sans-serif;
 }
 
 .about-container img{
@@ -92,6 +94,27 @@ p {
     }
 }
 
-@media screen and (max-width: 480px){
-
+@media screen and (max-width: 800px){
+    .container{
+        margin-left: 15px;
+    }
+    #heading{
+        font-size: 40px;
+    }
+    #paragraph{
+        font-size: 25px;
+    }
+    #patron-heading{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 572px){
+    #heading{
+        font-size: 35px;
+    }
+    #paragraph{
+        font-size: 20px;
+    }#patron-heading{
+        font-size: 35px;
+    }
 }
