@@ -21,31 +21,6 @@ window.addEventListener('scroll', function(event) { // To listen for event
 let section_counter = document.querySelector('#section_counter');
 let counters = document.querySelectorAll('.counter-item .counter');
 
-
-// accordian
-
-const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-
-accordionItemHeaders.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener("click", event => {
-
-        const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-        if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
-            currentlyActiveAccordionItemHeader.classList.toggle("active");
-            currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-        }
-
-        accordionItemHeader.classList.toggle("active");
-        const accordionItemBody = accordionItemHeader.nextElementSibling;
-        if (accordionItemHeader.classList.contains("active")) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-        } else {
-            accordionItemBody.style.maxHeight = 0;
-        }
-
-    });
-});
-
 // Scroll Animation
 
 let CounterObserver = new IntersectionObserver(
@@ -83,3 +58,16 @@ let CounterObserver = new IntersectionObserver(
 );
 
 CounterObserver.observe(section_counter);
+
+
+
+
+//active class
+
+
+$(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});

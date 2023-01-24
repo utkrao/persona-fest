@@ -62,14 +62,20 @@ nav{
 }
 
 .part-bottom-left input{
+    
 background: #FAFAFA;
 padding: 5px 8px;
 margin: 8px;
 border: 1px solid #C0C0C0;
 border-radius: 10px;
-width: 70%;    
+width: 70%;
+        
+    
 }
 
+.part-bottom-right , .part-bottom-left{
+   
+}
 
 .part-bottom-right img{
     height: 230px;
@@ -372,7 +378,9 @@ color: #000000;
     margin-top: 25px;
   }
    }
- 
+
+
+   
   
   
  
