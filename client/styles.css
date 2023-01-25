@@ -173,7 +173,7 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 }
 
 .hero-section-right img {
-  height: 20rem;
+  height: 24rem;
   width: auto;
   opacity: 0.7;
 }
@@ -201,6 +201,10 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 
 .dash img {
   width: 50%;
+}
+
+.register-btn {
+  margin-top: 2rem;
 }
 
 .register-now {
@@ -879,7 +883,7 @@ fieldset {
   }
 
   .hero-section-right img {
-    height: 17rem;
+    height: 20rem;
   }
 
   .logo img {
@@ -1088,7 +1092,7 @@ fieldset {
   }
 
   .counter-container {
-    margin: 5rem 0;
+    margin: 1rem 0 3rem 0;
   }
 }
 
@@ -1107,7 +1111,9 @@ fieldset {
     .video-section iframe {
      height:"350"; width:"350"
     }
-    
+    .hero-section-right img {
+      height: 15rem;
+    }
     .video-section h1 {
       font-size: 20px;
     }
