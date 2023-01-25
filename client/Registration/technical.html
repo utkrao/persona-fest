@@ -25,20 +25,20 @@
     <link rel="stylesheet" href="../styles.css" />
     <script>
       $(document).ready(function(){
-        $('.vishwashanti').click(function(){
+        $('.computing').click(function(){ //Blue
           var text = "";
-          $('.vishwashanti:checked').each(function()
+          $('.computing:checked').each(function()
           {
             text+=$(this).val()+",";
           });
           text=text.substring(0,text.length-1);
-          $('#data').val(text);
+          $('#Computingdata').val(text);
         })
       })
 
 
       $(document).ready(function(){
-        $('.vedic').click(function(){
+        $('.vedic').click(function(){  //orange
           var text = "";
           $('.vedic:checked').each(function()
           {
@@ -100,9 +100,16 @@
       </div>
     </div>
 </div>
+
+
+
+
+
+
+
     <div class="vishwashanti-sangeet-kala">
       <div class="items">
-        <h1 class="title">Events in MIT Vishwashanti Sangeet Kala</h1>
+        <h1 class="title">Events in MIT School of Computing</h1>
         <div class="dash"><img src="../images/dash.png" alt="" /></div>
 
         <div class="events">
@@ -118,12 +125,12 @@
       <div class="container-color">
         <p class="color color-1">   
           <label>
-            <input type="checkbox"  value="C1" class="vishwashanti" >
-            C1
+            <input type="checkbox"  value="A1" class="vishwashanti" >
+            A1
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-           <span>Date - Feb 16 2022</span> 
+           <strong>Cognisance Valorant</strong>
+           <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
+           <span>Date - Feb 16 & 17 2023</span> 
           
           
 
@@ -131,24 +138,24 @@
         </p>
           
         <p class="color color-8"><label>
-            <input type="checkbox" value="C2" class="vishwashanti">
-            C1
+            <input type="checkbox" value="A2" class="vishwashanti">
+            A2
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
+           <strong>Cognisance BGMI</strong>
+           <span><button type="button" name="myButton">Rs. 400/-</button> <span class="members">Only 4 member</span> </span>
            
           </button> 
-           <span>Date - Feb 16 2022</span> </p>
+           <span>Date - Feb 16 & 17 2023</span> </p>
         <p class="color color-5"><label>
-            <input type="checkbox"  value="C3" class="vishwashanti">
-            C2
+            <input type="checkbox"  value="A3" class="vishwashanti">
+            A3
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-           <span>Date - Feb 16 2022</span> </p>
+           <strong>Cognisance Find WayOut</strong>
+           <span><button type="button" name="myButton">Rs. 300/-</button> <span class="members">Only 3 member</span> </span>
+           <span>Date - Feb 16 & 17 2023</span> </p>
         <p class="color color-3"><label>
-            <input type="checkbox"  value="C4" class="vishwashanti">
-            C3
+            <input type="checkbox"  value="A4" class="vishwashanti">
+            A4
           </label>
            <strong>Event name</strong>
            <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
