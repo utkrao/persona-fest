@@ -1,9 +1,9 @@
 nav {
-  background-color: #291f64 !important;
+  background-color: #291F64;
 }
 
 .container {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -16,6 +16,7 @@ nav {
 
 #heading {
   font-size: 55px;
+  font-family: "Poppins", sans-serif;
 }
 
 .patron-grid {
@@ -23,33 +24,93 @@ nav {
   grid-template-columns: 1fr 1fr;
 }
 
-.rectangle1 {
-  height: 1.45rem;
-  width: 14rem;
-  background-color: #ff7a00;
-  display: inline-block;
-}
-
-.rectangle2 {
-  height: 1.45rem;
-  width: 14rem;
-  background-color: #00a08d;
-  display: inline-block;
-}
-
-.rectangle3 {
-  height: 1.45rem;
-  width: 14rem;
-  background-color: #a800e3;
-  display: inline-block;
-}
-
-.desc {
+p {
   padding-top: 7rem;
-  font-weight: bold;
   font-size: 3rem;
 }
 
 #textbold {
   color: #6f0098;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-container img{
+  width: 40rem;
+
+}
+
+.patron-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.patron-containeer{
+  margin: 0 9rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.patron-containeer h2{
+  font-size: 55px;
+  color: #464646;
+}
+.patron-containeer h4{
+  font-size: 24px;
+  margin-bottom: 3rem;
+  color: #464646;
+}
+.patron-containeer img{
+  width: 40rem;
+  margin-bottom: 40px;
+}
+
+.text-container p{
+  text-align: center;
+  padding: 0%;
+  font-size: 20px;
+  color: #000;
+}
+
+.patron-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 992px) {
+  .patron-grid {
+      grid-template-columns: 1fr;
+  }
+  .patron-card {
+      margin: 3rem 0 ;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .container{
+      margin-left: 15px;
+  }
+  #heading{
+      font-size: 40px;
+  }
+  #paragraph{
+      font-size: 25px;
+  }
+  #patron-heading{
+      font-size: 40px;
+  }
+}
+@media screen and (max-width: 572px){
+  #heading{
+      font-size: 35px;
+  }
+  #paragraph{
+      font-size: 20px;
+  }#patron-heading{
+      font-size: 35px;
+  }
 }
