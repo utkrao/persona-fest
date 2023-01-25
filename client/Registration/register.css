@@ -41,14 +41,27 @@
   align-items: center;
   padding-left: 10px;
 
+
   transform: translateX(-100%);
   user-select: none;
   cursor: pointer;
 }
 
+.drop-down-events{
+  width: 170px; 
+  background-color: #291f64;
+  margin: 10px 10px;
+}
 .list-item:hover {
-  background-color: rgb(164, 188, 165);
+  background-color: rgb(130, 130, 235);
   color: #fff;
+  width: 14%;
+  border-radius: 8px;
+}
+
+.list-item a{
+  text-decoration: none;
+  color:black ;
 }
 
 .toggle:focus::after {
@@ -56,34 +69,12 @@
 }
 
 .toggle:focus ~ .list {
-  height: 340px;
+  height: 200px;
 }
 
 .toggle:focus ~ .list .list-item {
   transform: translateX(0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
