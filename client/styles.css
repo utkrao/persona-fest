@@ -1015,6 +1015,9 @@ fieldset {
   footer .flex:first-child .flex-content {
     flex: 1 1 40%;
   }
+  .padding_1x {
+    margin: 0 0 10px 0;
+  }
 }
 
 @media (max-width: 920px) {
