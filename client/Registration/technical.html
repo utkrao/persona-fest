@@ -26,9 +26,9 @@
     <script>
       // SOC
       $(document).ready(function(){
-        $('.computing').click(function(){ //Blue
+        $('.vishwashanti').click(function(){ //Blue
           var text = "";
-          $('.computing:checked').each(function()
+          $('.vishwashanti:checked').each(function()
           {
             text+=$(this).val()+",";
           });
@@ -50,6 +50,19 @@
         })
       })
 
+// CIVIL
+      $(document).ready(function(){
+        $('.vishwashanti').click(function(){  //orange
+          var text = "";
+          $('.vishwashanti:checked').each(function()
+          {
+            text+=$(this).val()+",";
+          });
+          text=text.substring(0,text.length-1);
+          $('#civildata').val(text);
+        })
+      })
+      
 // ECE
       $(document).ready(function(){
         $('.vedic').click(function(){  //orange
@@ -65,9 +78,9 @@
 
 // MECHANICAL
       $(document).ready(function(){
-        $('.vedic').click(function(){  //orange
+        $('.vishwashanti').click(function(){  //orange
           var text = "";
-          $('.vedic:checked').each(function()
+          $('.vishwashanti:checked').each(function()
           {
             text+=$(this).val()+",";
           });
@@ -89,18 +102,7 @@
         })
       })
 
-// CIVIL
-      $(document).ready(function(){
-        $('.vedic').click(function(){  //orange
-          var text = "";
-          $('.vedic:checked').each(function()
-          {
-            text+=$(this).val()+",";
-          });
-          text=text.substring(0,text.length-1);
-          $('#civildata').val(text);
-        })
-      })
+
     </script>
   </head>
   <body>
@@ -175,63 +177,119 @@
             <input type="checkbox"  value="A1" class="vishwashanti" >
             A1
           </label>
-           <strong>Cognisance Valorant</strong>
-           <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
-           <span>Date - Feb 16 & 17 2023</span> 
+          <strong>Cognisance Valorant</strong>
+          <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> 
         </p>
         <p class="color color-8"><label>
             <input type="checkbox" value="A2" class="vishwashanti">
             A2
           </label>
-           <strong>Cognisance BGMI</strong>
-           <span><button type="button" name="myButton">Rs. 400/-</button> <span class="members">Only 4 member</span> </span>
-           
+          <strong>Cognisance BGMI</strong>
+          <span><button type="button" name="myButton">Rs. 400/-</button> <span class="members">Only 4 member</span> </span>
+          
           </button> 
-           <span>Date - Feb 16 & 17 2023</span> </p>
+          <span>Date - Feb 16 & 17 2023</span> </p>
         <p class="color color-5"><label>
             <input type="checkbox"  value="A3" class="vishwashanti">
             A3
           </label>
-           <strong>Cognisance Find WayOut</strong>
-           <span><button type="button" name="myButton">Rs. 300/-</button> <span class="members">Only 3 member</span> </span>
-           <span>Date - Feb 16 & 17 2023</span> </p>
+          <strong>Cognisance Find WayOut</strong>
+          <span><button type="button" name="myButton">Rs. 300/-</button> <span class="members">Only 3 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
         <p class="color color-3"><label>
             <input type="checkbox"  value="A4" class="vishwashanti">
             A4
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-           <span>Date - Feb 16 2022</span> </p>
+          <strong>Cognisance PS4</strong>
+          <span><button type="button" name="myBu tton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
         <p class="color color-6"><label>
-            <input type="checkbox" value="C5" class="vishwashanti">
-            C4
+            <input type="checkbox" value="A5" class="vishwashanti">
+            A4
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-           <span>Date - Feb 16 2022</span> </p>
+          <strong>Codebreak 4.0</strong>
+          <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 2-4 member</span> </span>
+          <span>Date - Feb 15 & 16 2023</span> </p>
         <p class="color color-4"><label>
-            <input type="checkbox"  value="C6" class="vishwashanti">
-            C5
+            <input type="checkbox"  value="A6" class="vishwashanti">
+            A6
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members" >Only 1 member</span> </span>
-           <span>Date - Feb 16 2022</span> </p>
+          <strong>Design Competition </strong>
+          <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members" >Only 1 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
         <p class="color color-7"><label>
-            <input type="checkbox"  value="C7" class="vishwashanti">
-            C6
+            <input type="checkbox"  value="A7" class="vishwashanti">
+            A7
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-           <span>Date - Feb 16 2022</span> </p>
+          <strong>Cyber Shenanigans</strong>
+          <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
         <p class="color color-2"><label>
-            <input type="checkbox"  value="C8" class="vishwashanti">
-            C7
+            <input type="checkbox"  value="A8" class="vishwashanti">
+            A8
           </label>
-           <strong>Event name</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-           <span>Date - Feb 16 2022</span> </p>
+          <strong>Project Expo</strong>
+          <span><button type="button" name="myButton">Rs. 200/-</button> <span class="members">Only 8-9 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
 
-           <input style="color: red; display: none;" id="data" type="text" readonly>
+          <p class="color color-2"><label>
+            <input type="checkbox"  value="A9" class="vishwashanti">
+            A9
+          </label>
+          <strong>Brains On Fire</strong>
+          <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 4-5 member</span> </span>
+          <span>Date - Feb 17 2023</span> </p>
+
+          <p class="color color-2"><label>
+            <input type="checkbox"  value="A10" class="vishwashanti">
+            A10
+          </label>
+          <strong>Idea Expo-Poster</strong>
+          <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1-3 member</span> </span>
+          <span>Date - Feb 18 2023</span> </p>
+
+          <p class="color color-2"><label>
+            <input type="checkbox"  value="A11" class="vishwashanti">
+            A11
+          </label>
+          <strong>Idea Expo-Presentation</strong>
+          <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1-4 member</span> </span>
+          <span>Date - Feb 18 2023</span> </p>
+
+          <p class="color color-2"><label>
+            <input type="checkbox"  value="A12" class="vishwashanti">
+            A12
+          </label>
+          <strong>Techno Escape Room</strong>
+          <span><button type="button" name="myButton">Rs. 200/-</button> <span class="members">Only 3-5 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
+
+          <p class="color color-2"><label>
+            <input type="checkbox"  value="A13" class="vishwashanti">
+            A13
+          </label>
+          <strong>Tech Improv</strong>
+          <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
+
+          <p class="color color-2"><label>
+            <input type="checkbox"  value="A14" class="vishwashanti">
+            A14
+          </label>
+          <strong>TechTalks</strong>
+          <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members"></span> </span>
+          <span>Date - Feb 16, 17 & 18 2023</span> </p>
+
+          <p class="color color-2"><label>
+            <input type="checkbox"  value="A15" class="vishwashanti">
+            A15
+          </label>
+          <strong>Capture the motion</strong>
+          <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1-3 members</span> </span>
+          <span>Date - Feb 16, 17 & 18 2023</span> </p>
+
+          <input style="color: red; display: none;" id="Computingdata" type="text" readonly>
           
       </div>
     </section>
@@ -263,30 +321,30 @@
             <input type="checkbox" name="myCheckbox" value="B1"  class="vedic">
             B1
           </label>
-           <strong>Astro - Art Competition</strong>
-           <span><button type="button" name="myButton">Rs. 150/-</button> <span class="members">1-4 members</span> </span>
-           <span>Date - Feb 16 2023</span> </p>
+          <strong>Astro - Art Competition</strong>
+          <span><button type="button" name="myButton">Rs. 150/-</button> <span class="members">1-4 members</span> </span>
+          <span>Date - Feb 16 2023</span> </p>
         <p class="color color-8 orange"><label>
             <input type="checkbox" name="myCheckbox" value="B2" class="vedic">
             B2
           </label>
-           <strong>Aerospace Project Exhibition</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span> </span>
-           <span>Date - Feb 16 2023</span> </p>
+          <strong>Aerospace Project Exhibition</strong>
+          <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span> </span>
+          <span>Date - Feb 16 2023</span> </p>
         <p class="color color-5 orange"><label>
             <input type="checkbox" name="myCheckbox" value="B3" class="vedic">
             B3
           </label>
-           <strong>RC Aircraft Competition</strong>
-           <span><button type="button" name="myButton">Rs.1000/-</button> <span class="members">1-5 members</span> </span>
-           <span>Date - Feb 17 2023</span> </p>
+          <strong>RC Aircraft Competition</strong>
+          <span><button type="button" name="myButton">Rs.1000/-</button> <span class="members">1-5 members</span> </span>
+          <span>Date - Feb 17 2023</span> </p>
         <p class="color color-3 orange"><label>
             <input type="checkbox" name="myCheckbox" value="B4" class="vedic">
             B4
           </label>
-           <strong>SkyHigh- Glider Competition</strong>
-           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-4 members</span> </span>
-           <span>Date - Feb 18 2023</span> </p>
+          <strong>SkyHigh- Glider Competition</strong>
+          <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-4 members</span> </span>
+          <span>Date - Feb 18 2023</span> </p>
         </p>
         <input style="color: red; display: none;" id="aerodata" type="text" readonly>
       </div>
@@ -294,6 +352,10 @@
         </div>
       </div>
 
+<<<<<<< HEAD
+      
+=======
+>>>>>>> c030ed26ce1666f0cc99def10c429f15e08ecb8e
 
 <!-- MIT SOE - CIVIL -->
 
@@ -314,44 +376,42 @@
         <input type="checkbox"  value="C1" class="vishwashanti" >
         C1
       </label>
-       <strong>CAD-War</strong>
-       <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-       <span>Date - Feb 17 2023</span> 
+      <strong>CAD-War</strong>
+      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
+      <span>Date - Feb 17 2023</span> 
     </p>
     <p class="color color-8"><label>
         <input type="checkbox" value="C2" class="vishwashanti">
         C2
       </label>
-       <strong>STADD-War</strong>
-       <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-       
+      <strong>STADD-War</strong>
+      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
+      
       </button> 
-       <span>Date - Feb 16 2023</span> </p>
+      <span>Date - Feb 16 2023</span> </p>
     <p class="color color-5"><label>
         <input type="checkbox"  value="C3" class="vishwashanti">
         C3
       </label>
-       <strong>Concrete Cube Competition</strong>
-       <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 3-4 members</span> </span>
-       <span>Date - Feb 16 & 17 2023</span> </p>
+      <strong>Concrete Cube Competition</strong>
+      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 3-4 members</span> </span>
+      <span>Date - Feb 16 & 17 2023</span> </p>
     <p class="color color-3"><label>
         <input type="checkbox"  value="C4" class="vishwashanti">
         C4
       </label>
-       <strong>Innovate</strong>
-       <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">1-3 members</span> </span>
-       <span>Date - Feb 17 2022</span> </p>
+      <strong>Innovate</strong>
+      <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">1-3 members</span> </span>
+      <span>Date - Feb 17 2023</span> </p>
     <p class="color color-6"><label>
         <input type="checkbox" value="C5" class="vishwashanti">
         C5
       </label>
-       <strong>CrossOver-Bridge Comp.</strong>
-       <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-3 members</span> </span>
-       <span>Date - Feb 18 2022</span> </p>
+      <strong>CrossOver-Bridge Comp.</strong>
+      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
+      <span>Date - Feb 18 2023</span> </p>
     
-
-
-       <input style="color: red; display: none;" id="civildata" type="text" readonly>
+      <input style="color: red; display: none;" id="civildata" type="text" readonly>
       
   </div>
 </section>
@@ -381,37 +441,37 @@
         <input type="checkbox" name="myCheckbox" value="D1"  class="vedic">
         D1
       </label>
-       <strong>Innovative Technical Idea</strong>
-       <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-3 members</span> </span>
-       <span>Date - Feb 16 2023</span> </p>
+      <strong>Innovative Technical Idea</strong>
+      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-3 members</span> </span>
+      <span>Date - Feb 16 2023</span> </p>
     <p class="color color-8 orange"><label>
         <input type="checkbox" name="myCheckbox" value="D2" class="vedic">
         D2
       </label>
-       <strong>Jigyasa-Project Competition</strong>
-       <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span>1-3 members</span>
-       <span>Date - Feb 16 2023</span> </p>
+      <strong>Jigyasa-Project Competition</strong>
+      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span>1-3 members</span>
+      <span>Date - Feb 16 2023</span> </p>
     <p class="color color-5 orange"><label>
         <input type="checkbox" name="myCheckbox" value="D3" class="vedic">
         D3
       </label>
-       <strong>4x4 Road Rally Race</strong>
-       <span><button type="button" name="myButton">Rs.50/-</button> <span class="members">Only 1 member</span> </span>
-       <span>Date - Feb 16 2023</span> </p>
+      <strong>4x4 Road Rally Race</strong>
+      <span><button type="button" name="myButton">Rs.50/-</button> <span class="members">Only 1 member</span> </span>
+      <span>Date - Feb 16 2023</span> </p>
     <p class="color color-3 orange"><label>
         <input type="checkbox" name="myCheckbox" value="D4" class="vedic">
         D4
       </label>
-       <strong>Digicode</strong>
-       <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
-       <span>Date - Feb 16 2023</span> </p>
+      <strong>Digicode</strong>
+      <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
+      <span>Date - Feb 16 2023</span> </p>
     <p class="color color-3 orange"><label>
         <input type="checkbox" name="myCheckbox" value="D5" class="vedic">
         D5
       </label>
-       <strong>Just Shop It</strong>
-       <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
-       <span>Date - Feb 16 2023</span> </p>
+      <strong>Just Shop It</strong>
+      <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
+      <span>Date - Feb 16 2023</span> </p>
     </p>
     <input style="color: red; display: none;" id="ecedata" type="text" readonly>
   </div>
@@ -439,44 +499,44 @@
           <input type="checkbox"  value="E1" class="vishwashanti" >
           E1
         </label>
-         <strong>Battle of the Brains - Quiz</strong>
-         <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 2 members</span> </span>
-         <span>Date - Feb 16 2023</span> 
+        <strong>Battle of the Brains - Quiz</strong>
+        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 2 members</span> </span>
+        <span>Date - Feb 16 2023</span> 
       </p>
       <p class="color color-8"><label>
           <input type="checkbox" value="E2" class="vishwashanti">
           E2
         </label>
-         <strong>Rocket Launcher</strong>
-         <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-2 members</span> </span>
-         
+        <strong>Rocket Launcher</strong>
+        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-2 members</span> </span>
+        
         </button> 
-         <span>Date - Feb 17 2023</span> </p>
+        <span>Date - Feb 17 2023</span> </p>
       <p class="color color-5"><label>
           <input type="checkbox"  value="E3" class="vishwashanti">
           E3
         </label>
-         <strong>Box Cricket</strong>
-         <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
-         <span>Date - Feb 17 & 18 2023</span> </p>
+        <strong>Box Cricket</strong>
+        <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
+        <span>Date - Feb 17 & 18 2023</span> </p>
       <p class="color color-3"><label>
           <input type="checkbox"  value="E4" class="vishwashanti">
           E4
         </label>
-         <strong>Robo Race</strong>
-         <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">2-6 members</span> </span>
-         <span>Date - Feb 18 2022</span> </p>
+        <strong>Robo Race</strong>
+        <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">2-6 members</span> </span>
+        <span>Date - Feb 18 2023</span> </p>
       <p class="color color-6"><label>
           <input type="checkbox" value="E5" class="vishwashanti">
           E5
         </label>
-         <strong>CAD Modelling</strong>
-         <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-         <span>Date - Feb 16 2022</span> </p>
+        <strong>CAD Modelling</strong>
+        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
+        <span>Date - Feb 16 2023</span> </p>
       
 
 
-         <input style="color: red; display: none;" id="mechdata" type="text" readonly>
+        <input style="color: red; display: none;" id="mechdata" type="text" readonly>
         
     </div>
   </section>
@@ -505,9 +565,9 @@
             <input type="checkbox" name="myCheckbox" value="F1"  class="vedic">
             F1
           </label>
-           <strong>SciFun(Safari of Science)</strong>
-           <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 3-10 members</span> </span>
-           <span>Date - Feb 16 & 17 2023</span> </p>
+          <strong>SciFun(Safari of Science)</strong>
+          <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 3-10 members</span> </span>
+          <span>Date - Feb 16 & 17 2023</span> </p>
         </p>
         <input style="color: red; display: none;" id="bioengdata" type="text" readonly>
       </div>
