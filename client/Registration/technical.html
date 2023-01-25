@@ -89,6 +89,18 @@
         })
       })
 
+// CIVIL
+      $(document).ready(function(){
+        $('.vedic').click(function(){  //orange
+          var text = "";
+          $('.vedic:checked').each(function()
+          {
+            text+=$(this).val()+",";
+          });
+          text=text.substring(0,text.length-1);
+          $('#civildata').val(text);
+        })
+      })
     </script>
   </head>
   <body>
@@ -281,6 +293,7 @@
     </section>
         </div>
       </div>
+      
 
 <!-- MIT SOE - CIVIL -->
 
@@ -319,26 +332,26 @@
         C3
       </label>
        <strong>Concrete Cube Competition</strong>
-       <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
-       <span>Date - Feb 17 & 18 2023</span> </p>
+       <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 3-4 members</span> </span>
+       <span>Date - Feb 16 & 17 2023</span> </p>
     <p class="color color-3"><label>
         <input type="checkbox"  value="C4" class="vishwashanti">
         C4
       </label>
-       <strong>Robo Race</strong>
-       <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">2-6 members</span> </span>
-       <span>Date - Feb 18 2022</span> </p>
+       <strong>Innovate</strong>
+       <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">1-3 members</span> </span>
+       <span>Date - Feb 17 2022</span> </p>
     <p class="color color-6"><label>
         <input type="checkbox" value="C5" class="vishwashanti">
         C5
       </label>
-       <strong>CAD Modelling</strong>
+       <strong>CrossOver-Bridge Comp.</strong>
        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-       <span>Date - Feb 16 2022</span> </p>
+       <span>Date - Feb 18 2022</span> </p>
     
 
 
-       <input style="color: red; display: none;" id="mechdata" type="text" readonly>
+       <input style="color: red; display: none;" id="civildata" type="text" readonly>
       
   </div>
 </section>
