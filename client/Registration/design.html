@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration - Management || MIT Persona Fest - 2023</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/persona-image.png" />
+    <link rel="shortcut icon" href="../client/images/persona-image.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="./register.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+        $(document).ready(function () {
+            $('.arts').click(function () {
+                var text = "";
+                $('.arts:checked').each(function () {
+                    text += $(this).val() + ",";
+                });
+                text = text.substring(0, text.length - 1);
+                $('#artsdata').val(text);
+            })
+        })
+
+        $(document).ready(function () {
+            $('.design').click(function () {
+                var text = "";
+                $('.design:checked').each(function () {
+                    text += $(this).val() + ",";
+                });
+                text = text.substring(0, text.length - 1);
+                $('#designdata').val(text);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo" />
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/about.html">About Us</a></li>
+            <li><a href="../index.html#event">Persona Events</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="../schedule/schedule.html">Schedule</a></li>
+            <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+            <li><a href="../ContactUs/Contactus.html">Contact Us</a></li>
+        </ul>
+
+        <div class="mobile-menu-icon">
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="cultural-events">
+        <h1>Design Events 2023</h1>
+    </div>
+    <form action="">
+        <div class="participants-div">
+            <div class="participants-details">
+                <div class="part-top">
+                    <h2>
+                        Range of management events hosted by MIT College of Design and MIT Collage of SOFA...
+                    </h2>
+                </div>
+
+                <div class="part-bottom">
+                    <div class="part-bottom-left">
+                        <h2>Participant Details</h2>
+                        <input type="name" placeholder="Full name*" />
+                        <input type="name" placeholder="Address" />
+                        <input type="name" placeholder="Phone*" />
+                        <input type="name" placeholder="College*" />
+                    </div>
+                    <div class="part-bottom-right">
+                        <img src="../images/persona-image.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vishwashanti-sangeet-kala">
+            <div class="items">
+                <h1 class="title">Events in MIT School of Fine Arts</h1>
+                <div class="dash"><img src="../images/dash.png" alt="" /></div>
+                <div class="events">
+                    <section class="container text-center">
+                        <!-- Text Head -->
+                        <section class="container text-center">
+                            <!-- Text Head -->
+                            <div class="container-color">
+                                <p class="color color-1  orange "><label>
+                                        <input type="checkbox" name="myCheckbox" value="K1" class="arts">
+                                        K1
+                                    </label>
+                                    <strong>Social Communication Design</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">4 Members</span></span>
+                                    <span>Date - Feb 16 2023</span>
+                                </p>
+                                <p class="color color-8 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K2" class="arts">
+                                        K2
+                                    </label>
+                                    <strong>Hunt hints</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">6 Members</span> </span>
+                                    <span>Date - Feb 18 2023</span>
+                                </p>
+                                <p class="color color-5 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K3" class="arts">
+                                        K3
+                                    </label>
+                                    <strong>Ju-gadi</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">5 Members</span> </span>
+                                    <span>Date - Feb 16-17 2023</span>
+                                </p>
+                                <p class="color color-3 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K4" class="arts">
+                                        K4
+                                    </label>
+                                    <strong>Lock & Load</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">5 Members</span> </span>
+                                    <span>Date - Feb 16-17 2023</span>
+                                </p>
+                                <p class="color color-6 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K5" class="arts">
+                                        K5
+                                    </label>
+                                    <strong>Slip Tease</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">2 Members</span> </span>
+                                    <span>Date - Feb 16-17 2023</span>
+                                </p>
+                                <p class="color color-4 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K6" class="arts">
+                                        K6
+                                    </label>
+                                    <strong>Yokozun</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">individual</span> </span>
+                                    <span>Date - Feb 17-18 2023</span>
+                                </p>
+                                <p class="color color-7 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K7" class="arts">
+                                        K7
+                                    </label>
+                                    <strong>Life-sized Jenga</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">2 Members</span> </span>
+                                    <span>Date - Feb 16-18 2023</span>
+                                </p>
+                                <p class="color color-2 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K8" class="arts">
+                                        K8
+                                    </label>
+                                    <strong>Color Wheel</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">6 Members</span> </span>
+                                    <span>Date - Feb 16-17 2023</span>
+                                </p>
+                                <p class="color color-2 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K9" class="arts">
+                                        K9
+                                    </label>
+                                    <strong>Bamboo Weave</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">individual</span> </span>
+                                    <span>Date - Feb 17 2023</span>
+                                </p>
+                                <p class="color color-2 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K10" class="arts">
+                                        K10
+                                    </label>
+                                    <strong>Clay Modelling</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">individual</span> </span>
+                                    <span>Date - Feb 16 2023</span>
+                                </p>
+                                <p class="color color-2 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K11" class="arts">
+                                        K11
+                                    </label>
+                                    <strong>Flea Market</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                            class="members">Individual</span> </span>
+                                    <span>Date - Feb 17-18 2023</span>
+                                </p>
+                                <p class="color color-2 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K12" class="arts">
+                                        K12
+                                    </label>
+                                    <strong>Comi-kest</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                      class="members">Individual</span> </span>
+                                    <span>Date - Feb 17 2023</span>
+                                </p>
+                                <p class="color color-2 orange"><label>
+                                        <input type="checkbox" name="myCheckbox" value="K13" class="arts">
+                                        K13
+                                    </label>
+                                    <strong>Concert</strong>
+                                    <span><button type="button" name="myButton">Free</button> <span
+                                      class="members">A singer/band</span> </span>
+                                    <span>Date - Feb 17-18 2023</span>
+                                </p>
+                            </div>
+                        </section>
+                </div>
+                <input style="color: red; display: none;" id="artsdata" type="text" readonly>
+            </div>
+            <div class="vishwashanti-sangeet-kala">
+              <div class="items">
+                  <h1 class="title">Events in MIT College of Design</h1>
+                  <div class="dash"><img src="../images/dash.png" alt="" /></div>
+                  <div class="events">
+                      <section class="container text-center">
+                          <!-- Text Head -->
+                          <section class="container text-center">
+                              <!-- Text Head -->
+                              <div class="container-color">
+                                  <p class="color color-1  orange "><label>
+                                          <input type="checkbox" name="myCheckbox" value="L1" class="design">
+                                          L1
+                                      </label>
+                                      <strong>THE ART TRIBE</strong>
+                                      <span><button type="button" name="myButton">Rs. 500/-</button> <span
+                                              class="members">individual</span></span>
+                                      <span>Date - Feb 6-13 2023</span>
+                                  </p>
+                                  <p class="color color-8 orange"><label>
+                                          <input type="checkbox" name="myCheckbox" value="L2" class="design">
+                                          L2
+                                      </label>
+                                      <strong>ZURI</strong>
+                                      <span><button type="button" name="myButton">Free</button> <span
+                                              class="members">individual</span> </span>
+                                      <span>Date - Feb 16-18 2023</span>
+                                  </p>
+                                  <p class="color color-5 orange"><label>
+                                          <input type="checkbox" name="myCheckbox" value="L3" class="design">
+                                          L3
+                                      </label>
+                                      <strong>ART मेला</strong>
+                                      <span><button type="button" name="myButton">Free</button> <span
+                                              class="members">individual</span> </span>
+                                      <span>Date - Feb 16-18 2023</span>
+                                  </p>
+                                  <p class="color color-3 orange"><label>
+                                          <input type="checkbox" name="myCheckbox" value="L4" class="design">
+                                          L4
+                                      </label>
+                                      <strong>Vishwalalit - On the spot painting</strong>
+                                      <span><button type="button" name="myButton">Rs. 500/-</button> <span
+                                              class="members">individual</span> </span>
+                                      <span>Date - Feb 15 2023</span>
+                                  </p>
+                                  <p class="color color-6 orange"><label>
+                                          <input type="checkbox" name="myCheckbox" value="L5" class="design">
+                                          L5
+                                      </label>
+                                      <strong>Vishwalalit Online Competition - PAINTING SCULPTURE PHOTOGRAPHY</strong>
+                                      <span><button type="button" name="myButton">Rs. 500/-</button> <span
+                                              class="members">individual</span> </span>
+                                      <span>Date - Feb 15 2023</span>
+                                  </p>
+                              </div>
+                          </section>
+                  </div>
+              </div>
+            <input style="color: red; display: none;" id="designdata" type="text" readonly>
+            <div class="submit-div"> <input id="submit-button" type="submit" value="Submit " /></div>
+        </div>
+
+
+        <footer class="padding_4x">
+            <div class="flex">
+                <section class="flex-content padding_1x">
+                    <h3>About Us</h3>
+                    <a>Persona Fest is amongst the most awaited techno cultural event
+                        being organized by the MIT-ADT University.. Read More
+                    </a>
+                </section>
+                <section class="flex-content padding_1x">
+                    <h3>Qther Links</h3>
+                    <a href="../About/about.html">Patron</a>
+                    <a href="#">Register Online</a>
+                    <a href="../Gallery/Gallery.html">Photo Gallery</a>
+                </section>
+                <section class="flex-content padding_1x">
+                    <h3>Important Links</h3>
+                    <a href="../index.html#event">Event Schedule</a>
+                    <a href="#">Online Registration Form</a>
+                    <a href="#">About MIT ADT University</a>
+                </section>
+                <section class="flex-content padding_1x">
+                    <h3>Get In Touch</h3>
+                    <a href="#">
+                        <div class="social facebook">
+                            <img src="../images/facebook.png" alt="" />
+                            <p>Facebook</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="../images/instagram.png" alt="" />
+                            <p>Instagram</p>
+                        </div>
+                    </a>
+                    <a href="mailto:registration.mitpersonafest@mituniversity.edu.in">
+                        <div class="social">
+                            <img src="../images/gmail.png" alt="" />
+                            <p>registration.mitpersonafest<br>@mituniversity.edu.in</p>
+                        </div>
+                    </a>
+                </section>
+                <section class="flex-content padding_1x">
+                    <h3>Newsletter</h3>
+                    <p>You can trust us. we only send promo offers</p>
+                    <fieldset class="fixed_flex email-field">
+                        <input type="email" name="newsletter" placeholder="Your Email Address" />
+                        <img src="../images/send-icon.png" alt="" />
+                    </fieldset>
+                </section>
+            </div>
+            <p>Copyright ©2023 All rights reserved || website name</p>
+        </footer>
+        <script src="../index.js"></script>
+</body>
+
+</html>
