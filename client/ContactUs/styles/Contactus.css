@@ -191,7 +191,7 @@ iframe {
 }
 @media only screen and (max-width: 960px) {
   .container {
-    padding: 0 30px 70px;
+    padding: 8rem 30px 70px;
   }
   .section2 .col2 {
     width: 100%;
