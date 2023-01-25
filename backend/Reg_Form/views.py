@@ -9,6 +9,8 @@ import Reg_Form
 from Reg_Form.models import users
 from django.db import connection
 from django.contrib import messages
+import razorpay
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def form(request):
@@ -22,22 +24,47 @@ def saveform(request):
         email = request.POST.get('email')
         College = request.POST.get('College')
         PhoneNo = request.POST.get('PhoneNo')
-        en = users(Fullname=Fullname,email=email,College = College , PhoneNo = PhoneNo ,  )
-        en.save()
-        return render(request,'register.html')
+        event = request.POST.get('event')
 
-        # cursor = connection.cursor()
-        # sql_checkemail_query = """SELECT PhoneNo from persona_users where PhoneNo = %s """
-        # data_tuple1 = (PhoneNo,)
-        # cursor.execute(sql_checkemail_query, data_tuple1)
-        # result = cursor.fetchall()
-        # if len(result) == 0:
-        #     messages.success(request,"Signup sucessful")
-        #     en.save()
-        #     return render(request,'login.html')
-        # else:   
-        #     messages.error(request,"This Phone number is already taken please use a different email")
-        #     return render(request,'form.html')
+        global en
+        en = users(Fullname=Fullname,email=email,College = College , PhoneNo = PhoneNo , event = event )
+        # en.save()
+        global total_cost
+        total_cost =[]
+        global x
+        x = event.split(",")
+        for y in x :
+            cursor = connection.cursor()
+            # cursor.execute('INSERT INTO reg_form_users (Fullname, email, College, PhoneNo , event )'
+            #     'VALUES (%s, %s, %s, %s,%s)',
+            #     (Fullname, email, College,PhoneNo , y ),
+            # )
+            sql_update_query = """SELECT cost from costs where event = %s"""
+            data_tuple = (y,)
+            cursor.execute(sql_update_query, data_tuple)
+            result = cursor.fetchall()
+            for cost in result:
+                for cost1 in cost:
+                    total_cost.append(cost1)
+    print(sum(total_cost))
+    # amount = sum(total_cost)
+    result = int(sum(total_cost))
+    amount = 100*(result)
+    order_currency = 'INR'
+    client = razorpay.Client(auth=("rzp_test_ASZsjsfB2r7y5C", "w8ZyJSQScX7q4x1wrURFK4yE"))
+    payment = client.order.create({'amount': amount, 'currency' : 'INR',  'payment_capture' : 1})
+    context = {'amount' : amount,}
+    return render(request,'payment.html',context)
+
+
 
 def registration(request):
     return render(request, 'register.html')
+
+
+@csrf_exempt
+def success(request):
+    # saveform.en.save() 
+    print(x)
+    en.save()
+    return render(request,'success.html')

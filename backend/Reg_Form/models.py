@@ -114,4 +114,5 @@ class users(models.Model):
     email = models.EmailField(max_length=20)
     College = models.CharField(max_length=20)    
     PhoneNo = models.CharField(max_length=10)
+    event = models.CharField(max_length=50)
    
