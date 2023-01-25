@@ -26,14 +26,14 @@
     <link rel="stylesheet" href="../styles.css" />
     <script>
       $(document).ready(function(){
-        $('.vishwashanti').click(function(){
+        $('.food').click(function(){
           var text = "";
-          $('.vishwashanti:checked').each(function()
+          $('.food:checked').each(function()
           {
             text+=$(this).val()+",";
           });
           text=text.substring(0,text.length-1);
-          $('#data').val(text);
+          $('#fooddata').val(text);
         })
       })
 
@@ -119,7 +119,7 @@
       <div class="container-color">
         <p class="color color-1">   
           <label>
-            <input type="checkbox"  value="G1" class="vishwashanti" >
+            <input type="checkbox"  value="G1" class="food" >
             G1
           </label>
            <strong>Food Shark Tank</strong>
@@ -132,7 +132,7 @@
         </p>
           
         <p class="color color-8"><label>
-            <input type="checkbox" value="G2" class="vishwashanti">
+            <input type="checkbox" value="G2" class="food">
             G2
           </label>
            <strong>Waste to Best</strong>
@@ -141,28 +141,28 @@
           </button> 
            <span>Date - Feb 16</span> </p>
         <p class="color color-5"><label>
-            <input type="checkbox"  value="G3" class="vishwashanti">
+            <input type="checkbox"  value="G3" class="food">
             G3
           </label>
            <strong>Food Dumb Charade</strong>
            <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
            <span>Date - Feb 16 </span> </p>
         <p class="color color-3"><label>
-            <input type="checkbox"  value=G4" class="vishwashanti">
+            <input type="checkbox"  value=G4" class="food">
             G4
           </label>
            <strong>Food Hunt</strong>
            <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
            <span>Date - Feb 17 </span> </p>
         <p class="color color-6"><label>
-            <input type="checkbox" value="G5" class="vishwashanti">
+            <input type="checkbox" value="G5" class="food">
             G5
           </label>
            <strong>Food war</strong>
            <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
            <span>Date - Feb 17 </span> </p>
         <p class="color color-4"><label>
-            <input type="checkbox"  value="G6" class="vishwashanti">
+            <input type="checkbox"  value="G6" class="food">
             G6
           </label>
            <strong>Ad Mad Food</strong>
@@ -170,7 +170,7 @@
            <span>Date - Feb 17</span> </p>
         
 
-           <input style="color: red; display: none;" id="data" type="text" readonly>
+           <input style="color: red; display: none;" id="fooddata" type="text" readonly>
           
       </div>
     </section>
