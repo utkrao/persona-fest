@@ -247,7 +247,7 @@ nav {
 /* persona about */
 
 .about-persona {
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   margin: 0 auto;
   background-image: url(./images/persona-background.png);
@@ -951,6 +951,7 @@ fieldset {
     flex-direction: column;
     justify-content: flex-start;
     gap: 5rem;
+    min-height: 100vh;
     width: 100%;
     z-index: 0;
   }
