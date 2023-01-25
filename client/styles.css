@@ -250,9 +250,10 @@ nav {
   max-height: 100vh;
   width: 100%;
   margin: 0 auto;
+  padding: 5rem 0;
   background-image: url(./images/persona-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   transform: translateY(-3rem);
   display: flex;
   align-items: center;
@@ -954,6 +955,7 @@ fieldset {
     min-height: 100vh;
     width: 100%;
     z-index: 0;
+    padding: 0;
   }
 
   .about-persona-text {
@@ -1115,6 +1117,12 @@ fieldset {
     }
     .event-dash img {
       width: 80%;
+    }
+    .about-persona-text h1 {
+      font-size: 24px;
+    }
+    .about-content {
+      font-size: 16px;
     }
   }
   
