@@ -25,7 +25,9 @@
 }
 
 .list {
-  background-color: white;
+  background-color: gray;
+  width: 260px;
+  margin-left: 10px;
   color: #444;
   list-style: none;
   display: grid;
@@ -36,10 +38,18 @@
   transition: 0.4s;
 }
 
+.list-item:hover {
+  
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1px;
+}
+
 .list-item {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  padding-top: 5px;
 
 
   transform: translateX(-100%);
@@ -48,20 +58,18 @@
 }
 
 .drop-down-events{
-  width: 170px; 
+  width: 175px;
+ 
   background-color: #291f64;
   margin: 10px 10px;
 }
-.list-item:hover {
-  background-color: rgb(130, 130, 235);
-  color: #fff;
-  width: 14%;
-  border-radius: 8px;
-}
+
 
 .list a{
   text-decoration: none;
   color:black ;
+  font-family: "Poppins";
+
 }
 
 .toggle:focus::after {
@@ -76,7 +84,9 @@
   transform: translateX(0);
 }
 
-
+.menu button{
+  width: 240px;
+}
 
 
 
@@ -295,8 +305,23 @@ color: black;
 }
 
 @media screen and (max-width: 1180px) {
+  .toggle{
+    font-size: 80%;
+  }
+
+  .menu button{
+    width: 170px;
+
+  }
+
+  .list{
+    width: 190px;
+  }
   .container-color {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .list a{
+    font-size: 90%;
   }
 
   .submit-div {
@@ -360,6 +385,7 @@ color: black;
 }
 
 @media screen and (max-width: 450px) {
+ 
   .vishwashanti-sangeet-kala .title {
     line-height: 10px;
     font-size: 10px;
