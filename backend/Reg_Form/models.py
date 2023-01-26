@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 # Create your models here.
 
 
@@ -31,7 +30,7 @@ from django.db import models
 #     Registration_name = models.CharField(max_length=50)
 #     selection = models.BooleanField(default= False)
 
-    
+
 # class Mech_Eng(models.Model):#1
 #     auto_increment_id = models.AutoField(primary_key=True)
 #     event_name = models.CharField(max_length=50)
@@ -88,7 +87,7 @@ from django.db import models
 #     event_name = models.CharField(max_length=50)
 #     selection = models.BooleanField(default = False)
 #     Registration_name = models.CharField(max_length=50)
-    
+
 
 # class Architecture_Eng(models.Model):#1
 #     auto_increment_id = models.AutoField(primary_key=True)
@@ -101,7 +100,7 @@ from django.db import models
 #     event_name = models.CharField(max_length=50)
 #     selection = models.BooleanField(default = False)
 #     Registration_name = models.CharField(max_length=50)
-        
+
 # class FoodAndTechnology(models.Model):#1
 #     auto_increment_id = models.AutoField(primary_key=True)
 #     event_name = models.CharField(max_length=50)
@@ -109,11 +108,13 @@ from django.db import models
 #     Registration_name = models.CharField(max_length=50)
 
 class users(models.Model):
-    id = models.BigAutoField(primary_key=True)
-    Fullname = models.CharField(max_length=20)    
-    email = models.EmailField(max_length=20)
-    College = models.CharField(max_length=20)    
-    PhoneNo = models.CharField(max_length=10)
-    event = models.CharField(max_length=50)
+    id = models.BigAutoField("ID", primary_key=True)
+    Fullname = models.CharField("Full Name", max_length=20)
+    email = models.EmailField("Email", max_length=20)
+    College = models.CharField("College", max_length=20)
+    PhoneNo = models.CharField("Phone No.", max_length=10)
+    event = models.CharField("Event", max_length=50)
     # timestamp = models.CharField(max_length=20)
-   
+
+    def __str__(self):
+        return self.College
