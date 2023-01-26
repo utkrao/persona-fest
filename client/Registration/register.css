@@ -85,7 +85,7 @@
 
 
 nav {
-  background-color: #291f64;
+  background-color: #291f64 !important;
   position: relative;
 }
 
