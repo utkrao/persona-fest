@@ -1,9 +1,5 @@
-body {
-  overflow-x: hidden;
-}
-
 nav {
-  background-color: #291F64 !important;
+  background-color: #291F64;
 }
 
 .container {
@@ -12,7 +8,7 @@ nav {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  padding-top: 12rem;
+  padding-top: 12rem !important;
   margin-bottom: 100px;
   color: #464646;
   background-image: url(https://ibb.co/qRXmkB2);
@@ -23,18 +19,12 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 
-.about-head h2 {
-  font-size: 55px;
-  font-family: "Poppins", sans-serif;
-  color: #464646;
-}
-
 .patron-grid {
   display: gird;
   grid-template-columns: 1fr 1fr;
 }
 
-.container p {
+p {
   padding-top: 7rem;
   font-size: 3rem;
 }
@@ -44,9 +34,8 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 
-.about-container img,
-.about-head img {
-  width: 40rem !important;
+.about-container img{
+  width: 40rem;
 
 }
 
@@ -99,10 +88,6 @@ nav {
   .patron-card {
       margin: 3rem 0 ;
   }
-  .container {
-    margin-bottom: 0;
-    padding-top: 8rem;
-  }
 }
 
 @media screen and (max-width: 800px){
@@ -118,26 +103,14 @@ nav {
   #patron-heading{
       font-size: 40px;
   }
-  .about-container img,
-  .about-head img {
-    width: 30rem !important;
-  }
-  .about-container p {
-    font-size: 16px;
-    padding-top: 2rem;
-  }
 }
 @media screen and (max-width: 572px){
   #heading{
-    font-size: 35px;
+      font-size: 35px;
   }
   #paragraph{
       font-size: 20px;
   }#patron-heading{
       font-size: 35px;
-  }
-  .about-container img,
-  .about-head img {
-    width: 20rem !important;
   }
 }
