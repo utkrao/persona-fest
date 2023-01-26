@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="./register.css" />
   <link rel="stylesheet" href="../styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
     $(document).ready(function () {
       $('.food').click(function () {
@@ -260,6 +261,15 @@
       </div>
       <p>Copyright ©2023 All rights reserved || website name</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init({
+        once: true,
+        offset:220,
+        duration:800
+      });
+    </script>
     <script src="../index.js"></script>
 </body>
 
