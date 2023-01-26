@@ -1,0 +1,242 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register || MIT Persona Fest - 2023</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="{%static 'images/persona-image.png'%}" />
+  <link rel="shortcut icon" href="{%static 'images/persona-image.png'%}" type="image/x-icon" />
+
+  <link rel="stylesheet" href="{%static 'css/register.css' %}" />
+  <link rel="stylesheet" href="{%static 'css/styles.css'%}" />
+    <script>
+      $(document).ready(function(){
+        $('.food').click(function(){
+          var text = "";
+          $('.food:checked').each(function()
+          {
+            text+=$(this).val()+",";
+          });
+          text=text.substring(0,text.length-1);
+          $('#event').val(text);
+        })
+      })
+
+
+      $(document).ready(function(){
+        $('.vedic').click(function(){
+          var text = "";
+          $('.vedic:checked').each(function()
+          {
+            text+=$(this).val()+",";
+          });
+          text=text.substring(0,text.length-1);
+          $('#data2').val(text);
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="{%static 'images/logo.png'%}" alt="Logo" />
+    </div>
+    <ul>
+      <li><a href="{% url 'index'%}">Home</a></li>
+      <li><a href="{% url 'about'%}">About Us</a></li>
+      <li><a href="#event">Persona Events</a></li>
+      <li><a href="{% url 'registration'%}">Registration</a></li>
+      <li><a href="./schedule/schedule.html">Schedule</a></li>
+      <li><a href="{% url 'gallery'%}">Gallery</a></li>
+      <li><a href="{%url 'Contactus'%}">Contact Us</a></li>
+    </ul>
+
+      <div class="mobile-menu-icon">
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="cultural-events">
+      <h1>Food Events 2023</h1>
+    </div>
+  <form action="{% url 'saveform'%}" method = "POST">
+      {%csrf_token%}
+    <div class="participants-div">
+    <div class="participants-details">
+      <div class="part-top">
+        <h2>
+          Range of events hosted by various departments by different
+          schools including MIT School of Food Technology.
+        </h2>
+      </div>
+    
+      <div class="part-bottom">
+        <div class="part-bottom-left">
+          <h2>Participant Details</h2>
+          <input type="Fullname" name = "Fullname" id="Fullname"  placeholder="Full name*" required/>
+          <input type="email" name = "email" id="email"  placeholder="Email Address*" required />
+          <input type="PhoneNo" name = "PhoneNo" id="PhoneNo"  placeholder="Phone Number*" required />
+          <input type="College" name = "College" id="College"  placeholder="College*" required />
+        </div>
+        <div class="part-bottom-right">
+          <img src="{%static 'images/persona-image.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+</div>
+    <div class="vishwashanti-sangeet-kala">
+      <div class="items">
+        <h1 class="title">Events in MIT School of Food Technology</h1>
+        <div class="dash"><img src="{%static 'images/dash.png'%}" alt="" /></div>
+
+        <div class="events">
+          <section class="container text-center">
+            <!-- Text Head -->
+
+
+      <section class="container text-center">
+      <!-- Text Head -->
+      
+     
+
+      <div class="container-color">
+        <p class="color color-1">   
+          <label>
+            <input type="checkbox"  value="G1" class="food" >
+            G1
+          </label>
+           <strong>Food Shark Tank</strong>
+           <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
+           <span>Date - Feb 16</span> 
+          
+          
+
+          
+        </p>
+          
+        <p class="color color-8"><label>
+            <input type="checkbox" value="G2" class="food">
+            G2
+          </label>
+           <strong>Waste to Best</strong>
+           <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
+           
+          </button> 
+           <span>Date - Feb 16</span> </p>
+        <p class="color color-5"><label>
+            <input type="checkbox"  value="G3" class="food">
+            G3
+          </label>
+           <strong>Food Dumb Charade</strong>
+           <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
+           <span>Date - Feb 16 </span> </p>
+        <p class="color color-3"><label>
+            <input type="checkbox"  value="G4" class="food">
+            G4
+          </label>
+           <strong>Food Hunt</strong>
+           <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
+           <span>Date - Feb 17 </span> </p>
+        <p class="color color-6"><label>
+            <input type="checkbox" value="G5" class="food">
+            G5
+          </label>
+           <strong>Food war</strong>
+           <span><button type="button" name="myButton">Rs. 100/- </button> <span class="members">per team</span> </span>
+           <span>Date - Feb 17 </span> </p>
+        <p class="color color-4"><label>
+            <input type="checkbox"  value="G6" class="food">
+            G6
+          </label>
+           <strong>Ad Mad Food</strong>
+           <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members" >per team</span> </span>
+           <span>Date - Feb 17</span> </p>
+        
+
+           <input style="color: red; display: none;" id="event" name="event" type="text" readonly>
+          
+      </div>
+    </section>
+        </div>
+      </div>
+      <div class="submit-div"> <input id="submit-button" type="submit" value="Submit " /></div>
+
+    </div>
+
+
+
+
+
+      <footer class="padding_4x">
+        <div class="flex">
+          <section class="flex-content padding_1x">
+            <h3>About Us</h3>
+            <a
+              >Persona Fest is amongst the most awaited techno cultural event
+              being organized by the MIT-ADT University.. Read More
+            </a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Other Links</h3>
+            <a href="{% url 'about'%}">Patron</a>
+            <a href="#">Register Online</a>
+            <a href="{% url 'gallery'%}">Photo Gallery</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Important Links</h3>
+            <a href="{%url 'index'%}">Event Schedule</a>
+            <a href="#">Online Registration Form</a>
+            <a href="#">About MIT ADT University</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Get In Touch</h3>
+            <a href="#"
+              ><div class="social facebook">
+                <img src="{%static 'images/facebook.png'%}" alt="" /><p>Facebook</p>
+              </div></a
+            >
+            <a href="#"
+              ><div class="social">
+                <img src="{%static 'images/instagram.png'%}" alt="" /><p>Instagram</p>
+              </div></a
+            >
+            <a href="mailto:registration.mitpersonafest@mituniversity.edu.in"
+              ><div class="social">
+                <img src="{%static 'images/gmail.png'%}" alt="" /><p
+                  >registration.mitpersonafest@mituniversity.edu.in</p
+                >
+              </div></a
+            >
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers</p>
+            <fieldset class="fixed_flex email-field">
+              <input
+                type="email"
+                name="newsletter"
+                placeholder="Your Email Address"
+              />
+              <img src="{%static 'images/send-icon.png'%}" alt="" />
+            </fieldset>
+          </section>
+        </div>
+            <p>© Copyright MIT-ADT PersonaFest - 2023 | All Rights Reserved</p>
+      </footer>
+      <script src="{%static 'js/index.js'%}"></script>
+  </body>
+</html>

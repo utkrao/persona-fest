@@ -20,6 +20,10 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
+    path('Contactus/', views.Contactus, name = "Contactus"),
+    path('about/', views.about, name = "about"),
+    path('gallery/', views.gallery, name = "gallery"),
+
     path('form/',include("Reg_Form.urls")),
 
 ]

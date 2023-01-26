@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'persona.wsgi.application'
 DATABASES = {  
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'Persona',  
+        'NAME': 'Persona2023',  
         'USER': 'root',  
         'PASSWORD': 'eva@2021',  
         'HOST': 'localhost',  
