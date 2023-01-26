@@ -45,17 +45,7 @@
   border-radius: 1px;
 }
 
-.list-item {
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  padding-top: 5px;
 
-
-  transform: translateX(-100%);
-  user-select: none;
-  cursor: pointer;
-}
 
 .drop-down-events{
   width: 175px;
