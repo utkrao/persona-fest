@@ -67,7 +67,7 @@
 }
 
 .toggle:focus ~ .list {
-  height: 200px;
+  height: 220px;
 }
 
 .toggle:focus ~ .list .list-item {
@@ -75,7 +75,7 @@
 }
 
 .menu button{
-  width: 240px;
+  width: 220px;
 }
 
 
