@@ -914,6 +914,7 @@ fieldset {
     display: block;
     align-items: center;
   }
+
   nav ul {
     position: absolute;
     top: 0;
@@ -926,7 +927,7 @@ fieldset {
     transition: transform 0.5s ease-in-out;
     gap: 0;
   }
-  
+
   nav ul li {
     padding: 3rem 3rem;
     display: flex;
@@ -974,6 +975,7 @@ fieldset {
     width: 100%;
     height: 90%;
   }
+
   .counter-grid {
     margin: 0 2rem;
     grid-template-columns: 1.5fr 1fr;
@@ -1111,9 +1113,11 @@ fieldset {
     height: "350";
     width: "350";
   }
-    .hero-section-right img {
-      height: 15rem;
-}
+
+  .hero-section-right img {
+    height: 15rem;
+  }
+
   .video-section h1 {
     font-size: 20px;
   }
@@ -1145,12 +1149,14 @@ fieldset {
   .event-dash img {
     width: 80%;
   }
-    .about-persona-text h1 {
-      font-size: 24px;
-    }
-    .about-content {
-      font-size: 16px;
-    }
+
+  .about-persona-text h1 {
+    font-size: 24px;
+  }
+
+  .about-content {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 450px) {
