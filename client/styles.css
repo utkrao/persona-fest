@@ -43,6 +43,10 @@ ul {
   background-position: center;
 }
 
+.hero-section::-webkit-scrollbar{
+  display: none;
+}
+
 header {
   background-color: transparent;
   width: 100%;
