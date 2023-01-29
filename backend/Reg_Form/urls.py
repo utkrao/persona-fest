@@ -13,7 +13,8 @@ urlpatterns = [
     path('saveform/', views.saveform, name = "saveform"),
     path('technical/', views.technical, name = "technical"),
     path('success/', views.success, name = "success"),
-    # path('Contactus/', views.Contactus, name = "Contactus"),
-    # path('', views.saveform, name = "form"),
+  
+
+
 
 ]

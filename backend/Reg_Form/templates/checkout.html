@@ -36,14 +36,15 @@
         <div class="user-details">
           <h1>Applicant Name -<span><br>{{Fullname}}</span></h1>
           <h1>Applicant Email -<span><br>{{email}}</span></h1>
+          <h1>Applicant College -<span><br>{{College}}</span></h1>
           <h1 style="padding-bottom: 50px;">Applicant Phone -<span><br>{{PhoneNo}}</span></h1>
         </div>
         <div class="cont">
           {% for i  in receipt %}
         <div class="user-event-details">
-          <h1 class="event-heading">C1 - Event Name 1 {{i}}</h1>
+          <h1 class="event-heading">{{i}}</h1>
           <h1 class="registration-id">
-            Unique Registration Id - 
+            
             <span> </span>
           </h1>
         </div>

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_tables2',
     'Reg_Form',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -76,19 +77,20 @@ WSGI_APPLICATION = 'persona.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Persona',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
-    }
+DATABASES = {  
+    'default': {  
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': 'Persona2023',  
+        'USER': 'root',  
+        'PASSWORD': 'eva@2021',  
+        'HOST': 'localhost',  
+        'PORT': '3306',  
+        'OPTIONS': {  
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+        }  
+    }  
 }
+
 
 
 # Password validation
@@ -131,6 +133,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#  STATIC_URL = 'static/'
+
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    '/person/persona-fest/backend/static'
+
+)
 
 
 #  STATIC_URL = 'static/'

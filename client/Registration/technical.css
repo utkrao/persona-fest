@@ -88,7 +88,7 @@ nav {
 
 .container {
   margin: auto;
-  min-height: auto;
+  min-height: 50vh;
   max-width: 250rem;
   padding: 2rem;
   border-radius: 6px;

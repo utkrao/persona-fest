@@ -24,7 +24,7 @@
                     text += $(this).val() + ",";
                 });
                 text = text.substring(0, text.length - 1);
-                $('#event').val(text);
+                $('#artsdata').val(text);
             })
         })
 
@@ -221,6 +221,7 @@
                             </div>
                         </section>
                 </div>
+                <input style="color: red; display: none;" id="artsdata" type="text" readonly>
             </div>
             <div class="vishwashanti-sangeet-kala">
               <div class="items">
@@ -233,7 +234,7 @@
                               <!-- Text Head -->
                               <div class="container-color">
                                   <p class="color color-1  orange "><label>
-                                          <input type="checkbox" name="myCheckbox" value="L1" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L1" class="design">
                                           L1
                                       </label>
                                       <strong>THE ART TRIBE</strong>
@@ -242,7 +243,7 @@
                                       <span>Date - Feb 6-13 2023</span>
                                   </p>
                                   <p class="color color-8 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L2" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L2" class="design">
                                           L2
                                       </label>
                                       <strong>ZURI</strong>
@@ -251,7 +252,7 @@
                                       <span>Date - Feb 16-18 2023</span>
                                   </p>
                                   <p class="color color-5 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L3" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L3" class="design">
                                           L3
                                       </label>
                                       <strong>ART मेला</strong>
@@ -260,7 +261,7 @@
                                       <span>Date - Feb 16-18 2023</span>
                                   </p>
                                   <p class="color color-3 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L4" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L4" class="design">
                                           L4
                                       </label>
                                       <strong>Vishwalalit - On the spot painting</strong>
@@ -269,10 +270,10 @@
                                       <span>Date - Feb 15 2023</span>
                                   </p>
                                   <p class="color color-6 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L5" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L5" class="design">
                                           L5
                                       </label>
-                                      <strong>Vishwalalit Online Competition - PAINTING SCULPTURE PHOTOGRAPHY</strong>
+                                      <strong>Vishwalalit - PAINTING SCULPTURE PHOTOGRAPHY</strong>
                                       <span><button type="button" name="myButton">Rs. 500/-</button> <span
                                               class="members">individual</span> </span>
                                       <span>Date - Feb 15 2023</span>
@@ -281,7 +282,7 @@
                           </section>
                   </div>
               </div>
-            <input style="color: red; display: none;" id="event" name="event" type="text" readonly>
+            <input style="color: red; display: none;" id="designdata" type="text" readonly>
             <div class="submit-div"> <input id="submit-button" type="submit" value="Submit " /></div>
         </div>
 

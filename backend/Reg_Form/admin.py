@@ -1,12 +1,7 @@
 from django.contrib import admin
-from .models import users
+from Reg_Form.models import *
+# Register your models here.
 
 
-@admin.register(users)
-class UserAdmin(admin.ModelAdmin):
-    list_display: tuple[str] = (
-        "id", "Fullname", "email", "College", "PhoneNo", "event")
+admin.site.register(admin_data)
 
-    search_fields: tuple[str] = ("Fullname", "event", "College")
-
-    list_filter: tuple[str] = ("event", "College")

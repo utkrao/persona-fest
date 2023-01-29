@@ -23,8 +23,6 @@ urlpatterns = [
     path('Contactus/', views.Contactus, name = "Contactus"),
     path('about/', views.about, name = "about"),
     path('gallery/', views.gallery, name = "gallery"),
-    path('retrieval/', views.retrieval, name = "retrieval"),
-
 
     path('form/',include("Reg_Form.urls")),
 
