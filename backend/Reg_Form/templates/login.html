@@ -1,0 +1,169 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        /* body
+        {
+           
+        } */
+        .logingrid
+        {
+            display: grid;
+            grid-template-columns: 100%;
+            width: 25%;
+            margin-left: 37.5%;
+            margin-top: 150px;
+        }
+        .logo
+        {
+            height: auto;
+            text-align: center;
+        }
+        .logo h1
+        {
+            margin-top: 20px;
+        }
+        .login
+        {
+            height: 400px;
+        }
+        .logo img
+        {
+            width: 70%;
+            margin-top: 70px;
+            filter: drop-shadow(0 0 0.75rem #999);
+
+        }
+        input[type=text]
+        {
+            padding: 7px;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 30px;
+            font-size: 20px;
+        }
+        input[type=password]
+        {
+            padding: 7px;
+            width: 80%;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        input[type=submit]
+        {
+            height: 45px;
+            background-color: navy;
+            color: white;
+            width: 60%;
+        }
+        form
+        {
+            margin-top: 60px;
+            width: 80%;
+            margin-left: 10%;
+            text-align: center;
+        }
+        form h1
+        {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        @media screen and (max-width: 1000px) and (min-width: 800px)
+        {
+            .logingrid
+        {
+            display: grid;
+            grid-template-columns: 100%;
+            width: 30%;
+            margin-left: 35%;
+            margin-top: 150px;
+            filter: drop-shadow(0 0 0.75rem #999);
+        }  
+        }
+        @media screen and (max-width: 800px) and (min-width: 700px)
+        {
+            .logingrid
+        {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 150px;
+            filter: drop-shadow(0 0 0.75rem #999);
+        }  
+        }
+        @media screen and (max-width: 700px) and (min-width: 320px)
+        {
+            .logingrid
+        {
+            display: grid;
+            grid-template-columns: 100%;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 50px;
+        } 
+        .logo
+        {
+            height: auto;
+            text-align: center;
+        }
+        .logo img
+        {
+            padding-bottom: 10px;
+        }
+        .logo h1
+        {
+            padding-bottom: 20px;
+        }
+        .login
+        {
+            height: 300px;
+        }
+        form
+        {
+            margin-top: 50px;
+            width: 80%;
+            margin-left: 10%;
+        } 
+        input[type=submit]
+        {
+            height: 40px;
+            background-color: navy;
+            color: white;
+            width: 60%;
+        }
+        }
+    </style>
+    <div class="container">
+        <div class="logingrid">
+            <div class="logo">
+                <img src= "{%static 'images/qrpf.png' %}">
+                <h1>Amount: {{amount}}/-</h1>
+            </div>
+            <div class="login">
+                <form action = "{% url 'success'%}" method="POST">
+                    {% csrf_token%}
+                    <h1>Enter UTR/UPI Transcation Id</h1>
+                    <input type="text" id = 'Txn_id' name="Txn_id" placeholder="Enter Transaction ID"> <br><br>
+                    <input type="text" id = 'Txn_id2' name="Txn_id2" placeholder="Re-enter ID"> <br><br>
+                    <input type = "submit" value = "SUBMIT" placeholder="SUBMIT">
+                </form>
+            </div>
+        </div>
+</div>
+</body>
+</html>
