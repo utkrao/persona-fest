@@ -43,6 +43,10 @@ ul {
   background-position: center;
 }
 
+.hero-section::-webkit-scrollbar{
+  display: none;
+}
+
 header {
   background-color: transparent;
   width: 100%;
@@ -172,7 +176,7 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 }
 
 .hero-section-right img {
-  height: 24rem;
+  height: 29rem;
   width: auto;
   opacity: 0.7;
 }
@@ -239,6 +243,8 @@ nav {
 .marquee {
   position: relative;
   width: 80%;
+  display: flex;
+  align-items: center;
   height: 32px;
   margin: auto;
   border-radius: 4px;
@@ -597,6 +603,7 @@ span {
 
 .sponsers h1 {
   font-family: "Inter";
+  padding-top: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -656,9 +663,8 @@ span {
              FOOTER
 **********/
 footer {
-  background-color: var(--primary);
   color: var(--lite);
-  background: rgba(41, 31, 100, 0.9);
+  background-color: rgba(41, 31, 100, 0.9);
 }
 
 footer h3 {
@@ -674,6 +680,10 @@ footer a {
 
 footer fieldset {
   padding: 0;
+}
+
+.other-links {
+  transform: translateX(45px);
 }
 
 footer fieldset input {
@@ -724,6 +734,16 @@ footer .flex:last-child a {
 .email-field input::placeholder {
   color: #fff;
   font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px !important;
+}
+
+.email p {
+  margin-top: 8px !important;
+}
+
+.email img {
+  width: 32px;
 }
 
 footer .flex:last-child a:hover {
@@ -849,12 +869,13 @@ fieldset {
 }
 
 .social img {
-  width: 40px;
+  width: 30px;
 }
 
 .social p {
   display: flex;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 .facebook {
@@ -862,7 +883,7 @@ fieldset {
 }
 
 .facebook img {
-  width: 55px !important;
+  width: 40px !important;
   transform: translateX(-6px);
 }
 

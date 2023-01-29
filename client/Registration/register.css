@@ -150,7 +150,6 @@ nav {
 }
 
 .part-bottom-right img {
-  height: 230px;
   width: 230px;
 }
 
@@ -172,7 +171,7 @@ nav {
 
 .container {
   margin: auto;
-  min-height: 50vh;
+  min-height: 18vh;
   max-width: 250rem;
   padding: 2rem;
   border-radius: 6px;

@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="./register.css" />
     <link rel="stylesheet" href="../styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         $(document).ready(function () {
             $('.arts').click(function () {
@@ -67,7 +68,7 @@
     <div class="cultural-events">
     
     </div>
-    <div class="menu">
+    <div class="menu"  data-aos="fade-left">
         <button class="toggle drop-down-events" >Design Events 2023</button>
        <ul class="list">
        
@@ -82,21 +83,21 @@
     <form action="">
         <div class="participants-div">
             <div class="participants-details">
-                <div class="part-top">
+                <div class="part-top"  data-aos="fade-left">
                     <h2>
                         Range of management events hosted by MIT College of Design and MIT SOFA...
                     </h2>
                 </div>
 
                 <div class="part-bottom">
-                    <div class="part-bottom-left">
+                    <div class="part-bottom-left"  data-aos="fade-left">
                         <h2>Participant Details</h2>
                         <input type="name" placeholder="Full name*" />
                         <input type="name" placeholder="Address" />
                         <input type="name" placeholder="Phone*" />
                         <input type="name" placeholder="College*" />
                     </div>
-                    <div class="part-bottom-right">
+                    <div class="part-bottom-right"  data-aos="fade-left">
                         <img src="../images/persona-image.png" alt="" />
                     </div>
                 </div>
@@ -105,13 +106,11 @@
 
         <div class="vishwashanti-sangeet-kala">
             <div class="items">
-                <h1 class="title">Events in MIT School of Fine Arts</h1>
-                <div class="dash"><img src="../images/dash.png" alt="" /></div>
-                <div class="events">
+                <h1 class="title"  data-aos="fade-up">Events in MIT School of Fine Arts</h1>
+                <div class="dash" data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+                <div class="events" data-aos="fade-up">
                     <section class="container text-center">
-                        <!-- Text Head -->
-                        <section class="container text-center">
-                            <!-- Text Head -->
+                       
                             <div class="container-color">
                                 <p class="color color-1  orange "><label>
                                         <input type="checkbox" name="myCheckbox" value="K1" class="arts">
@@ -237,13 +236,11 @@
             </div>
             <div class="vishwashanti-sangeet-kala">
               <div class="items">
-                  <h1 class="title">Events in MIT Institute of Design</h1>
-                  <div class="dash"><img src="../images/dash.png" alt="" /></div>
-                  <div class="events">
+                  <h1 class="title" data-aos="fade-up">Events in MIT Institute of Design</h1>
+                  <div class="dash" data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+                  <div class="events" data-aos="fade-up">
                       <section class="container text-center">
-                          <!-- Text Head -->
-                          <section class="container text-center">
-                              <!-- Text Head -->
+                     
                               <div class="container-color">
                                   <p class="color color-1  orange "><label>
                                           <input type="checkbox" name="myCheckbox" value="L1" class="design">
@@ -301,25 +298,25 @@
 
         <footer class="padding_4x">
             <div class="flex">
-                <section class="flex-content padding_1x">
+                <section class="flex-content padding_1x"  data-aos="fade-left">
                     <h3>About Us</h3>
                     <a>Persona Fest is amongst the most awaited techno cultural event
                         being organized by the MIT-ADT University.. Read More
                     </a>
                 </section>
-                <section class="flex-content padding_1x">
+                <section class="flex-content padding_1x"  data-aos="fade-left">
                     <h3>Qther Links</h3>
                     <a href="../About/about.html">Patron</a>
                     <a href="#">Register Online</a>
                     <a href="../Gallery/Gallery.html">Photo Gallery</a>
                 </section>
-                <section class="flex-content padding_1x">
+                <section class="flex-content padding_1x"  data-aos="fade-left">
                     <h3>Important Links</h3>
                     <a href="../index.html#event">Event Schedule</a>
                     <a href="#">Online Registration Form</a>
                     <a href="#">About MIT ADT University</a>
                 </section>
-                <section class="flex-content padding_1x">
+                <section class="flex-content padding_1x"  data-aos="fade-left">
                     <h3>Get In Touch</h3>
                     <a href="#">
                         <div class="social facebook">
@@ -340,7 +337,7 @@
                         </div>
                     </a>
                 </section>
-                <section class="flex-content padding_1x">
+                <section class="flex-content padding_1x" data-aos="fade-left">
                     <h3>Newsletter</h3>
                     <p>You can trust us. we only send promo offers</p>
                     <fieldset class="fixed_flex email-field">
@@ -351,6 +348,15 @@
             </div>
             <p>Copyright ©2023 All rights reserved || website name</p>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- INITIALIZE AOS -->
+        <script>
+          AOS.init({
+            once: true,
+            offset:220,
+            duration:800
+          });
+        </script>
         <script src="../index.js"></script>
 </body>
 

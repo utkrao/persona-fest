@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="./register.css" />
   <link rel="stylesheet" href="../styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
     $(document).ready(function () {
       $('.food').click(function () {
@@ -93,7 +94,7 @@
   <form action="">
     <div class="participants-div">
       <div class="participants-details">
-        <div class="part-top">
+        <div class="part-top"  data-aos="fade-left">
           <h2>
             Range of events hosted by various departments by different
             schools including MIT School of Food Technology.
@@ -101,14 +102,14 @@
         </div>
 
         <div class="part-bottom">
-          <div class="part-bottom-left">
+          <div class="part-bottom-left" data-aos="fade-left">
             <h2>Participant Details</h2>
             <input type="name" placeholder="Full name*" />
             <input type="name" placeholder="Address" />
             <input type="name" placeholder="Phone*" />
             <input type="name" placeholder="College*" />
           </div>
-          <div class="part-bottom-right">
+          <div class="part-bottom-right" data-aos="fade-left">
             <img src="../images/persona-image.png" alt="" />
           </div>
         </div>
@@ -116,17 +117,15 @@
     </div>
     <div class="vishwashanti-sangeet-kala">
       <div class="items">
-        <h1 class="title">Events in MIT School of Food Technology</h1>
-        <div class="dash"><img src="../images/dash.png" alt="" /></div>
+        <h1 class="title" data-aos="fade-up">Events in MIT School of Food Technology</h1>
+        <div class="dash" data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
 
-        <div class="events">
+        <div class="events" data-aos="fade-up">
           <section class="container text-center">
             <!-- Text Head -->
 
 
-            <section class="container text-center">
-              <!-- Text Head -->
-
+          
 
 
               <div class="container-color">
@@ -260,6 +259,15 @@
       </div>
       <p>Copyright ©2023 All rights reserved || website name</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init({
+        once: true,
+        offset:220,
+        duration:800
+      });
+    </script>
     <script src="../index.js"></script>
 </body>
 
