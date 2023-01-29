@@ -74,6 +74,10 @@ p {
   color: #000;
 }
 
+.social p {
+  padding: 0;
+}
+
 .patron-card {
   display: flex;
   flex-direction: column;
