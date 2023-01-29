@@ -30,13 +30,13 @@
     })
 
     $(document).ready(function () {
-      $('.sft').click(function () {
+      $('.vedic').click(function () {
         var text = "";
-        $('.sft:checked').each(function () {
+        $('.vedic:checked').each(function () {
           text += $(this).val() + ",";
         });
         text = text.substring(0, text.length - 1);
-        $('#data4').val(text);
+        $('#data2').val(text);
       })
     })
 
@@ -51,15 +51,14 @@
       })
     })
 
-
     $(document).ready(function () {
-      $('.vedic').click(function () {
+      $('.sft').click(function () {
         var text = "";
-        $('.vedic:checked').each(function () {
+        $('.sft:checked').each(function () {
           text += $(this).val() + ",";
         });
         text = text.substring(0, text.length - 1);
-        $('#data2').val(text);
+        $('#data4').val(text);
       })
     })
   </script>
@@ -89,21 +88,31 @@
     </div>
   </nav>
   <div class="cultural-events">
-   
-    
+
+
   </div>
   <div class="menu" data-aos="fade-left">
-       <button class="toggle drop-down-events" >Cultural Events 2023</button>
-      <ul class="list">
-      
-        <a href="../Registration/technical.html"><li class="list-item" >Technical Events</li></a>
-        <a href="../Registration/management.html"><li class="list-item" >Management Events</li></a>
-        <a href="../Registration/design.html"><li class="list-item" >Design Events</li></a>
-        <a href="../Registration/food.html"><li class="list-item" >Food Tech. Events</li></a>
-        <a href="../Registration/architecture.html"><li class="list-item" >Architecture Events</li></a>
-       
-      </ul>
-    </div>
+    <button class="toggle drop-down-events">Cultural Events 2023</button>
+    <ul class="list">
+
+      <a href="../Registration/technical.html">
+        <li class="list-item">Technical Events</li>
+      </a>
+      <a href="../Registration/management.html">
+        <li class="list-item">Management Events</li>
+      </a>
+      <a href="../Registration/design.html">
+        <li class="list-item">Design Events</li>
+      </a>
+      <a href="../Registration/food.html">
+        <li class="list-item">Food Tech. Events</li>
+      </a>
+      <a href="../Registration/architecture.html">
+        <li class="list-item">Architecture Events</li>
+      </a>
+
+    </ul>
+  </div>
   <form action="">
     <div class="participants-div">
       <div class="participants-details" data-aos="fade-left">
@@ -123,7 +132,7 @@
             <input type="phone" placeholder="Phone*" />
             <input type="name" placeholder="College*" />
           </div>
-          <div class="part-bottom-right" data-aos="fade-left"> 
+          <div class="part-bottom-right" data-aos="fade-left">
             <img src="../images/persona-image.png" alt="" />
           </div>
         </div>
@@ -131,107 +140,85 @@
     </div>
 
 
-
-
-
-
-
     <div class="vishwashanti-sangeet-kala">
       <div class="items" data-aos="fade-up">
         <h1 class="title">Events in MIT Int. School of Broadcasting and & Journalism</h1>
-        <div class="dash"><img  data-aos="fade-up" src="../images/dash.png" alt="" /></div>
+        <div class="dash"><img data-aos="fade-up" src="../images/dash.png" alt="" /></div>
 
         <div class="events">
           <section class="container text-center">
             <!-- Text Head -->
 
+            <div class="container-color" data-aos="fade-up">
+              <p class="color color-1">
+                <label>
+                  <input type="checkbox" value="N1" class="isbj">
+                  N1
+                </label>
+                <strong>Face the cam</strong>
+                <span><button type="button" name="myButton">Free</button> <span class="members">Only 1 member</span>
+                </span>
+                <span>Date- Feb 16 2023</span>
+              </p>
 
-           
+              <p class="color color-8"><label>
+                  <input type="checkbox" value="N2" class="isbj">
+                  N2
+                </label>
+                <strong>Shutterbug Hunt</strong>
+                <span><button type="button" name="myButton">NULL</button> <span class="members">Individual/Team</span>
+                </span>
 
+                </button>
+                <span>Date - Feb 16 2023</span>
+              </p>
+              <p class="color color-5"><label>
+                  <input type="checkbox" value="N3" class="isbj">
+                  N3
+                </label>
+                <strong>Ad-attack</strong>
+                <span><button type="button" name="myButton">NULL</button> <span class="members">Individual/Team</span>
+                </span>
+                <span>Date - Feb 16 2023</span>
+              </p>
+              <p class="color color-3"><label>
+                  <input type="checkbox" value="N4" class="isbj">
+                  N4
+                </label>
+                <strong>Fiction-Con</strong>
+                <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1
+                    member</span> </span>
+                <span>Date - Feb 16 2023</span>
+              </p>
+              <p class="color color-6"><label>
+                  <input type="checkbox" value="N5" class="isbj">
+                  N5
+                </label>
+                <strong>Le Foto Exposition</strong>
+                <span><button type="button" name="mybutton">Free</button> <span class="members">Individual/Team</span>
+                </span>
+                <span>Date- Feb 16-17 2023</span>
+              </p>
 
+              <input style="color: red; display: none;" id="data" type="text" readonly>
 
-              <div class="container-color"  data-aos="fade-up">
-                <p class="color color-1" >
-                  <label>
-                    <input type="checkbox" value="N1" class="isbj">
-                    N1
-                  </label>
-                  <strong>Face the cam</strong>
-                  <span><button type="button" name="myButton">Free</button> <span class="members">Only 1 member</span>
-                  </span>
-                  <span>Date- Feb 16 2023</span>
-
-
-
-
-                </p>
-
-                <p class="color color-8" ><label>
-                    <input type="checkbox" value="N2" class="isbj">
-                    N2
-                  </label>
-                  <strong>Shutterbug Hunt</strong>
-                  <span><button type="button" name="myButton">NULL</button> <span class="members">Individual/Team</span>
-                  </span>
-
-                  </button>
-                  <span>Date - Feb 16 2023</span>
-                </p>
-                <p class="color color-5"><label>
-                    <input type="checkbox" value="N3" class="isbj">
-                    N3
-                  </label>
-                  <strong>Ad-attack</strong>
-                  <span><button type="button" name="myButton">NULL</button> <span class="members">Individual/Team</span>
-                  </span>
-                  <span>Date - Feb 16 2023</span>
-                </p>
-                <p class="color color-3"  ><label>
-                    <input type="checkbox" value="N4" class="isbj">
-                    N4
-                  </label>
-                  <strong>Fiction-Con</strong>
-                  <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1
-                      member</span> </span>
-                  <span>Date - Feb 16 2023</span>
-                </p>
-                <p class="color color-6"  ><label>
-                    <input type="checkbox" value="N5" class="isbj">
-                    N5
-                  </label>
-                  <strong>Le Foto Exposition</strong>
-                  <span><button type="button" name="mybutton">Free</button> <span class="members">Individual/Team</span>
-                  </span>
-                  <span>Date- Feb 16-17 2023</span>
-                </p>
-
-                <input style="color: red; display: none;" id="data" type="text" readonly>
-
-              </div>
-            </section>
+            </div>
+          </section>
         </div>
       </div>
     </div>
 
 
-
-
-
-
-    <div class="vishwashanti-sangeet-kala" >
+    <div class="vishwashanti-sangeet-kala">
       <div class="items">
-        <h1 class="title"  data-aos="fade-up">Events in MIT Vedic Science & Studies</h1>
-        <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+        <h1 class="title" data-aos="fade-up">Events in MIT Vedic Science & Studies</h1>
+        <div class="dash" data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
 
-        <div class="events"  data-aos="fade-up">
+        <div class="events" data-aos="fade-up">
           <section class="container text-center">
             <!-- Text Head -->
-
-
             <section class="container text-center">
               <!-- Text Head -->
-
-
 
               <div class="container-color">
                 <p class="color color-1  orange "><label>
@@ -280,20 +267,13 @@
 
     <div class="vishwashanti-sangeet-kala">
       <div class="items">
-        <h1 class="title"  data-aos="fade-up">Events in MIT School of Education and Research</h1>
-        <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+        <h1 class="title" data-aos="fade-up">Events in MIT School of Education and Research</h1>
+        <div class="dash" data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
 
         <div class="events">
           <section class="container text-center">
             <!-- Text Head -->
-
-
-
-
-
-
-
-            <div class="container-color"  data-aos="fade-up">
+            <div class="container-color" data-aos="fade-up">
               <p class="color color-1">
                 <label>
                   <input type="checkbox" value="P1" class="schoolofresearch">
@@ -303,10 +283,6 @@
                 <span><button type="button" name="myButton">NULL</button> <span class="members">Only 1 member</span>
                 </span>
                 <span>Date - Feb 16 2023</span>
-
-
-
-
               </p>
 
               <p class="color color-8"><label>
@@ -319,10 +295,7 @@
                 </button>
                 <span>Date - Feb 16 2023</span>
               </p>
-
-
               <input style="color: red; display: none;" id="data3" type="text" readonly>
-
             </div>
           </section>
         </div>
@@ -330,63 +303,42 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
     <div class="vishwashanti-sangeet-kala">
       <div class="items">
-        <h1 class="title"  data-aos="fade-up">Events in School of Fine Arts</h1>
-        <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+        <h1 class="title" data-aos="fade-up">Events in School of Fine Arts</h1>
+        <div class="dash" data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
 
-        <div class="events"  data-aos="fade-up">
+        <div class="events" data-aos="fade-up">
           <section class="container text-center">
-           
 
+            <div class="container-color">
+              <p class="color color-1  orange "><label>
+                  <input type="checkbox" name="myCheckbox" value="M1" class="vedic">
+                  M1
+                </label>
+                <strong>24 Hour Film Making</strong>
+                <span><button type="button" name="myButton">FREE</button> <span class="members">Individual/Team</span>
+                </span>
+                <span>Date - Feb 16 2023</span>
+              </p>
 
+              <p class="color color-1  orange "><label>
+                  <input type="checkbox" name="myCheckbox" value="M2" class="vedic">
+                  M2
+                </label>
+                <strong>Public Screaming</strong>
+                <span><button type="button" name="myButton">FREE</button> <span class="members">Individual/Team</span>
+                </span>
+                <span>Date - Feb 16 2023</span>
+              </p>
 
-              <div class="container-color">
-                <p class="color color-1  orange "><label>
-                    <input type="checkbox" name="myCheckbox" value="M1" class="vedic">
-                    M1
-                  </label>
-                  <strong>24 Hour Film Making</strong>
-                  <span><button type="button" name="myButton">FREE</button> <span class="members">Individual/Team</span>
-                  </span>
-                  <span>Date - Feb 16 2023</span>
-                </p>
-
-                <p class="color color-1  orange "><label>
-                    <input type="checkbox" name="myCheckbox" value="M2" class="vedic">
-                    M2
-                  </label>
-                  <strong>Public Screaming</strong>
-                  <span><button type="button" name="myButton">FREE</button> <span class="members">Individual/Team</span>
-                  </span>
-                  <span>Date - Feb 16 2023</span>
-                </p>
-
-              </div>
-            </section>
+            </div>
+          </section>
         </div>
       </div>
-
       <input style="color: red; display: none;" id="data2" type="text" readonly>
-
       <div class="submit-div"> <input id="submit-button" type="submit" value="Submit " /></div>
-
     </div>
-
-
-
-
-
 
 
     <footer class="padding_4x">
@@ -446,8 +398,8 @@
     <script>
       AOS.init({
         once: true,
-        offset:220,
-        duration:800
+        offset: 220,
+        duration: 800
       });
     </script>
     <script src="../index.js"></script>
