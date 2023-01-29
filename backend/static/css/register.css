@@ -40,11 +40,10 @@ nav {
 
 .part-bottom {
   /* border: 2px solid red; */
-  width: 90%;
+  width: 100%;
   align-self: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
 .part-bottom-left {

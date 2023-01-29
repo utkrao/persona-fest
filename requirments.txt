@@ -3,3 +3,5 @@ Django==4.1.5
 mysqlclient==2.1.1
 sqlparse==0.4.3
 tzdata==2022.7
+pycrypto==2.6.1
+paytm==0.1.8

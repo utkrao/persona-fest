@@ -12,3 +12,6 @@ def about(request):
 
 def gallery(request):
     return render(request,'Gallery.html')
+
+def retrieval(request):
+    return render('admin.html')

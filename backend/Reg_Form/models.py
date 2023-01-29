@@ -115,5 +115,18 @@ class users(models.Model):
     College = models.CharField(max_length=20)    
     PhoneNo = models.CharField(max_length=10)
     event = models.CharField(max_length=50)
+    # Txn_id = models.CharField(max_length=100)
     # timestamp = models.CharField(max_length=20)
+
+class admin_data(models.Model):
+    id = models.CharField(max_length=50 ,primary_key=True)
+    Fullname = models.CharField(max_length=20)    
+    email = models.EmailField(max_length=20)
+    College = models.CharField(max_length=20)    
+    PhoneNo = models.CharField(max_length=10)
+    event = models.CharField(max_length=50)
+    Txn_id = models.CharField(max_length=100)
+    timestamp = models.CharField(max_length=20)
+
+
    
