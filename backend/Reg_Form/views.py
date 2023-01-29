@@ -56,7 +56,17 @@ def saveform(request):
         en = users(Fullname=Fullname,email=email,College = College , PhoneNo = PhoneNo , event = event )
         # en.save()
         global total_cost
+        global cost_events
+
+        global uncost_events
+        global uncostreceipt
+
         total_cost =[]
+        cost_events = []
+
+        uncost_events=[]
+        uncostreceipt = []
+
         global x
         x = event.split(",")
         for y in x :
@@ -67,41 +77,44 @@ def saveform(request):
             result = cursor.fetchall()
             for cost in result:
                 for cost1 in cost:
+                    if cost1 == 0:
+                        uncost_events.append(y)
+                        order_id = uuid.uuid1()
+                        now = datetime.now()
+                        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+                        cursor = connection.cursor()
+                        cursor.execute(
+                            'INSERT INTO reg_form_users (id , Fullname, email, College, PhoneNo , event , timestamp)'
+                            'VALUES (%s ,%s, %s, %s, %s , %s , %s )',
+                            (order_id, Fullname, email, College, PhoneNo, y, now),
+                            )
+
+                        bill = y + ' - ' + str(order_id)
+                        uncostreceipt.append(bill)
+
+                    else:
                         total_cost.append(cost1)
-    print(sum(total_cost))
-    # amount = sum(total_cost)
-    result = int(sum(total_cost))
-    # for ab in total_cost:
-    if result != 0:        
-        amount = (result)
-        context = {'amount' : amount,
-        'result' : result}
-        return render(request,'total_payable.html',context)
+                        cost_events.append(y)
+
     else:
-        receipt = []
+        return HttpResponse("Access Denied")
+    result1 = int(sum(total_cost))
 
-        for y in x:
-            order_id = uuid.uuid1()
-            now = datetime.now()
-            dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-            cursor = connection.cursor()
-            cursor.execute('INSERT INTO reg_form_users (id , Fullname, email, College, PhoneNo , event , timestamp)'
-                    'VALUES (%s ,%s, %s, %s, %s , %s , %s )',
-                    ( order_id , Fullname, email, College,PhoneNo , y, now ),
-                )
-            es = admin_data(Fullname = Fullname , email = email , College = College , PhoneNo = PhoneNo , timestamp = now , event = y)
-            es.save()
+    if result1 != 0:
+        amount = (result1)
+        context = {'amount': amount,
+                   'result': result1}
+        return render(request, 'total_payable.html', context)
 
-            bill = y + ' - ' + str(order_id)
-            receipt.append(bill)
-            context ={
-                'Fullname' : Fullname,
-                'email'    : email,
-                'PhoneNo'  : PhoneNo,
-                'receipt'  : receipt,
-                'College' : College
-            }
-        return render(request,'checkout.html', context)
+    else:
+        context = {
+            'Fullname': Fullname,
+            'email': email,
+            'PhoneNo': PhoneNo,
+            'receipt': uncostreceipt,
+            'College': College
+        }
+        return render(request, 'checkout.html', context)
 
 
 
@@ -112,14 +125,17 @@ def registration(request):
 @csrf_exempt
 def success(request):
     # saveform.en.save() 
-    receipt = []
+    receipt1 = []
     bill = []
     if request.method == "POST":
         Txn_id = request.POST.get('Txn_id')
 
+    else:
+        return HttpResponse("404 Not Found")
+
         # en = users(Txn_id = Txn_id)
         
-    for y in x :
+    for y in cost_events :
             # print(Fullname,email,PhoneNo,College, y)
             order_id = uuid.uuid1()
             now = datetime.now()
@@ -133,14 +149,25 @@ def success(request):
             es.save()
 
             bill = y + ' - ' + str(order_id)
-            receipt.append(bill)
-    context ={
-                'Fullname' : Fullname,
-                'email' : email,
-                'PhoneNo'  : PhoneNo,
-                'receipt' :receipt,
-                'College' : College
-            }
+            receipt1.append(bill)
 
-    return render(request,'checkout.html',context)
+    if len(uncostreceipt) == 0:
+        context = {
+            'Fullname': Fullname,
+            'email': email,
+            'PhoneNo': PhoneNo,
+            'receipt': receipt1,
+            'College': College
+        }
+        return render(request, 'checkout.html', context)
+    else:
+        final_receipt = receipt1 + uncostreceipt
+        context = {
+             'Fullname': Fullname,
+             'email': email,
+             'PhoneNo': PhoneNo,
+             'receipt': final_receipt,
+             'College': College
+        }
+        return render(request,'checkout.html',context)
 
