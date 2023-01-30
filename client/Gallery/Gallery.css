@@ -41,7 +41,7 @@ nav {
 }
 
 .gallery .controls .buttons.active {
-  background: coral;
+  background: #372c77;
   color: #fff;
   border-radius: 5px;
 }
