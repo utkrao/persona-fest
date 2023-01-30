@@ -22,6 +22,7 @@ nav {
 .patron-grid {
   display: gird;
   grid-template-columns: 1fr 1fr;
+  margin: 4rem 0;
 }
 
 p {
@@ -34,9 +35,9 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-.about-container img{
+.about-container img, 
+.patron-container img {
   width: 40rem;
-
 }
 
 .patron-grid {
@@ -45,7 +46,7 @@ p {
   gap: 1rem;
 }
 
-.patron-containeer{
+.patron-container{
   margin: 0 9rem;
   min-height: 100vh;
   display: flex;
@@ -53,18 +54,17 @@ p {
   justify-content: center;
 }
 
-.patron-containeer h2{
+.patron-container h2{
   font-size: 55px;
   color: #464646;
 }
-.patron-containeer h4{
-  font-size: 24px;
-  margin-bottom: 3rem;
+.patron-container h4{
+  font-size: 2rem;
+  margin-bottom: 2rem;
   color: #464646;
 }
-.patron-containeer img{
+.patron-container img{
   width: 40rem;
-  margin-bottom: 40px;
 }
 
 .text-container p{
@@ -72,6 +72,10 @@ p {
   padding: 0%;
   font-size: 20px;
   color: #000;
+}
+
+.social p {
+  padding: 0;
 }
 
 .patron-card {

@@ -1,651 +1,706 @@
-
-
-
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Register || MIT Persona Fest - 2023</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      />
-      <script
-    src="https://code.jquery.com/jquery-3.6.3.js"
-    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Technical || MIT Persona Fest - 2023</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
-      <link rel="icon" type="image/x-icon" href="../images/persona-image.png" />
-      <link
-        rel="shortcut icon"
-        href="../client/images/persona-image.png"
-        type="image/x-icon"
-      />
+  <link rel="icon" type="image/x-icon" href="../images/persona-image.png" />
+  <link rel="shortcut icon" href="../client/images/persona-image.png" type="image/x-icon" />
 
-      <link rel="stylesheet" href="../Registration/register.css" />
-      <link rel="stylesheet" href="../styles.css" />
-      <script>
-        // SOC
-        $(document).ready(function(){
-          $('.vishwashanti').click(function(){ //Blue
-            var text = "";
-            $('.vishwashanti:checked').each(function()
-            {
-              text+=$(this).val()+",";
-            });
-            text=text.substring(0,text.length-1);
-            $('#Computingdata').val(text);
-          })
-        })
+  <link rel="stylesheet" href="../Registration/register.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    // SOC
+    $(document).ready(function () {
+      $('.computing').click(function () { //Blue
+        var text = "";
+        $('.computing:checked').each(function () {
+          text += $(this).val() + ",";
+        });
+        text = text.substring(0, text.length - 1);
+        $('#Computingdata').val(text);
+      })
+    })
 
-  // AERO
-        $(document).ready(function(){
-          $('.vedic').click(function(){  //orange
-            var text = "";
-            $('.vedic:checked').each(function()
-            {
-              text+=$(this).val()+",";
-            });
-            text=text.substring(0,text.length-1);
-            $('#aerodata').val(text);
-          })
-        })
+    // AERO
+    $(document).ready(function () {
+      $('.aero').click(function () {  //orange
+        var text = "";
+        $('.aero:checked').each(function () {
+          text += $(this).val() + ",";
+        });
+        text = text.substring(0, text.length - 1);
+        $('#aerodata').val(text);
+      })
+    })
 
-  // ECE
-        $(document).ready(function(){
-          $('.vedic').click(function(){  //orange
-            var text = "";
-            $('.vedic:checked').each(function()
-            {
-              text+=$(this).val()+",";
-            });
-            text=text.substring(0,text.length-1);
-            $('#ecedata').val(text);
-          })
-        })
+    // ECE
+    $(document).ready(function () {
+      $('.ece').click(function () {  //orange
+        var text = "";
+        $('.ece:checked').each(function () {
+          text += $(this).val() + ",";
+        });
+        text = text.substring(0, text.length - 1);
+        $('#ecedata').val(text);
+      })
+    })
 
-  // MECHANICAL
-        $(document).ready(function(){
-          $('.vishwashanti').click(function(){  //orange
-            var text = "";
-            $('.vishwashanti:checked').each(function()
-            {
-              text+=$(this).val()+",";
-            });
-            text=text.substring(0,text.length-1);
-            $('#mechdata').val(text);
-          })
-        })
+    // MECHANICAL
+    $(document).ready(function () {
+      $('.mech').click(function () {  //orange
+        var text = "";
+        $('.mech:checked').each(function () {
+          text += $(this).val() + ",";
+        });
+        text = text.substring(0, text.length - 1);
+        $('#mechdata').val(text);
+      })
+    })
 
-  // BIOENGINEERING
-        $(document).ready(function(){
-          $('.vedic').click(function(){  //orange
-            var text = "";
-            $('.vedic:checked').each(function()
-            {
-              text+=$(this).val()+",";
-            });
-            text=text.substring(0,text.length-1);
-            $('#bioengdata').val(text);
-          })
-        })
+    // BIOENGINEERING
+    $(document).ready(function () {
+      $('.bioeng').click(function () {  //orange
+        var text = "";
+        $('.bioeng:checked').each(function () {
+          text += $(this).val() + ",";
+        });
+        text = text.substring(0, text.length - 1);
+        $('#bioengdata').val(text);
+      })
+    })
 
-  // CIVIL
-        $(document).ready(function(){
-          $('.vishwashanti').click(function(){  //orange
-            var text = "";
-            $('.vishwashanti:checked').each(function()
-            {
-              text+=$(this).val()+",";
-            });
-            text=text.substring(0,text.length-1);
-            $('#civildata').val(text);
-          })
-        })
-      </script>
-    </head>
-    <body>
-      <nav>
-        <div class="logo">
-          <img src="../images/logo.png" alt="Logo" />
-        </div>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../About/about.html">About Us</a></li>
-          <li><a href="#">Persona Events</a></li>
-          <li><a href="#">Registration</a></li>
-          <li><a href="../schedule/schedule.html">Schedule</a></li>
-          <li><a href="../Gallery/Gallery.html">Gallery</a></li>
-          <li><a href="../ContactUs/Contactus.html">Contact Us</a></li>
-        </ul>
-  
-        <div class="mobile-menu-icon">
-          <div class="hamburger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </div>
-      </nav>
-      <div class="cultural-events">
-        <h1>Technical Events 2023</h1>
+    // CIVIL
+    $(document).ready(function () {
+      $('.civil').click(function () {  //orange
+        var text = "";
+        $('.civil:checked').each(function () {
+          text += $(this).val() + ",";
+        });
+        text = text.substring(0, text.length - 1);
+        $('#civildata').val(text);
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="../images/logo.png" alt="Logo" />
+    </div>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../About/about.html">About Us</a></li>
+      <li><a href="#">Persona Events</a></li>
+      <li><a href="#">Registration</a></li>
+      <li><a href="../schedule/schedule.html">Schedule</a></li>
+      <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+      <li><a href="../ContactUs/Contactus.html">Contact Us</a></li>
+    </ul>
+
+    <div class="mobile-menu-icon">
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-    <form action="">
-      <div class="participants-div">
+    </div>
+  </nav>
+  <div class="cultural-events">
+
+  </div>
+  <div class="menu"  data-aos="fade-left">
+    <button class="toggle drop-down-events">Technical Events 2023</button>
+    <ul class="list">
+
+      <a href="./register.html">
+        <li class="list-item">Cultural Events</li>
+      </a>
+      <a href="./management.html">
+        <li class="list-item">Management Events</li>
+      </a>
+      <a href="./design.html">
+        <li class="list-item">Design Events</li>
+      </a>
+      <a href="./food.html">
+        <li class="list-item">Food Tech. Events</li>
+      </a>
+      <a href="./architecture.html">
+        <li class="list-item">Architecture Events</li>
+      </a>
+
+    </ul>
+  </div>
+  <form action="">
+    <div class="participants-div">
       <div class="participants-details">
-        <div class="part-top">
+        <div class="part-top"  data-aos="fade-left">
           <h2>
             Range of Cultural events hosted by various departments by different
             schools including MIT Vedic Science, MIT Sangeetkala etc...
           </h2>
         </div>
-      
+
         <div class="part-bottom">
-          <div class="part-bottom-left">
+          <div class="part-bottom-left"  data-aos="fade-left">
             <h2>Participant Details</h2>
             <input type="name" placeholder="Full name*" />
             <input type="name" placeholder="Address" />
             <input type="name" placeholder="Phone*" />
             <input type="name" placeholder="College*" />
           </div>
-          <div class="part-bottom-right">
+          <div class="part-bottom-right"  data-aos="fade-left">
             <img src="../images/persona-image.png" alt="" />
           </div>
         </div>
       </div>
-  </div>
-
-
-
-  <!-- MITSOC -->
-
-
-      <div class="vishwashanti-sangeet-kala">
-        <div class="items">
-          <h1 class="title">Events in MIT School of Computing</h1>
-          <div class="dash"><img src="../images/dash.png" alt="" /></div>
-
-          <div class="events">
-            <section class="container text-center">
-              <!-- Text Head -->
-        <section class="container text-center">
-        <!-- Text Head -->
-        <div class="container-color">
-          <p class="color color-1">   
-            <label>
-              <input type="checkbox"  value="A1" class="vishwashanti" >
-              A1
-            </label>
-            <strong>Cognisance Valorant</strong>
-            <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> 
-          </p>
-          <p class="color color-8"><label>
-              <input type="checkbox" value="A2" class="vishwashanti">
-              A2
-            </label>
-            <strong>Cognisance BGMI</strong>
-            <span><button type="button" name="myButton">Rs. 400/-</button> <span class="members">Only 4 member</span> </span>
-            
-            </button> 
-            <span>Date - Feb 16 & 17 2023</span> </p>
-          <p class="color color-5"><label>
-              <input type="checkbox"  value="A3" class="vishwashanti">
-              A3
-            </label>
-            <strong>Cognisance Find WayOut</strong>
-            <span><button type="button" name="myButton">Rs. 300/-</button> <span class="members">Only 3 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-          <p class="color color-3"><label>
-              <input type="checkbox"  value="A4" class="vishwashanti">
-              A4
-            </label>
-            <strong>Cognisance PS4</strong>
-            <span><button type="button" name="myBu tton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-          <p class="color color-6"><label>
-              <input type="checkbox" value="A5" class="vishwashanti">
-              A4
-            </label>
-            <strong>Codebreak 4.0</strong>
-            <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 2-4 member</span> </span>
-            <span>Date - Feb 15 & 16 2023</span> </p>
-          <p class="color color-4"><label>
-              <input type="checkbox"  value="A6" class="vishwashanti">
-              A6
-            </label>
-            <strong>Design Competition </strong>
-            <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members" >Only 1 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-          <p class="color color-7"><label>
-              <input type="checkbox"  value="A7" class="vishwashanti">
-              A7
-            </label>
-            <strong>Cyber Shenanigans</strong>
-            <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-          <p class="color color-2"><label>
-              <input type="checkbox"  value="A8" class="vishwashanti">
-              A8
-            </label>
-            <strong>Project Expo</strong>
-            <span><button type="button" name="myButton">Rs. 200/-</button> <span class="members">Only 8-9 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-
-            <p class="color color-2"><label>
-              <input type="checkbox"  value="A9" class="vishwashanti">
-              A9
-            </label>
-            <strong>Brains On Fire</strong>
-            <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 4-5 member</span> </span>
-            <span>Date - Feb 17 2023</span> </p>
-
-            <p class="color color-2"><label>
-              <input type="checkbox"  value="A10" class="vishwashanti">
-              A10
-            </label>
-            <strong>Idea Expo-Poster</strong>
-            <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1-3 member</span> </span>
-            <span>Date - Feb 18 2023</span> </p>
-
-            <p class="color color-2"><label>
-              <input type="checkbox"  value="A11" class="vishwashanti">
-              A11
-            </label>
-            <strong>Idea Expo-Presentation</strong>
-            <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1-4 member</span> </span>
-            <span>Date - Feb 18 2023</span> </p>
-
-            <p class="color color-2"><label>
-              <input type="checkbox"  value="A12" class="vishwashanti">
-              A12
-            </label>
-            <strong>Techno Escape Room</strong>
-            <span><button type="button" name="myButton">Rs. 200/-</button> <span class="members">Only 3-5 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-
-            <p class="color color-2"><label>
-              <input type="checkbox"  value="A13" class="vishwashanti">
-              A13
-            </label>
-            <strong>Tech Improv</strong>
-            <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-
-            <p class="color color-2"><label>
-              <input type="checkbox"  value="A14" class="vishwashanti">
-              A14
-            </label>
-            <strong>TechTalks</strong>
-            <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members"></span> </span>
-            <span>Date - Feb 16, 17 & 18 2023</span> </p>
-
-            <p class="color color-2"><label>
-              <input type="checkbox"  value="A15" class="vishwashanti">
-              A15
-            </label>
-            <strong>Capture the motion</strong>
-            <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1-3 members</span> </span>
-            <span>Date - Feb 16, 17 & 18 2023</span> </p>
-
-            <input style="color: red; display: none;" id="Computingdata" type="text" readonly>
-            
-        </div>
-      </section>
-          </div>
-        </div>
-      </div>
-
-
-
-
-  <!-- MIT - AEROSPACE -->
-
-
-      <div class="vishwashanti-sangeet-kala">
-        <div class="items">
-          <h1 class="title">Events in MIT SOE - Aerospace Engineering</h1>
-          <div class="dash"><img src="../images/dash.png" alt="" /></div>
-
-          <div class="events">
-            <section class="container text-center">
-              <!-- Text Head -->
-
-
-        <section class="container text-center">
-        <!-- Text Head -->
-        
-        <div class="container-color">
-          <p class="color color-1  orange "><label>
-              <input type="checkbox" name="myCheckbox" value="B1"  class="vedic">
-              B1
-            </label>
-            <strong>Astro - Art Competition</strong>
-            <span><button type="button" name="myButton">Rs. 150/-</button> <span class="members">1-4 members</span> </span>
-            <span>Date - Feb 16 2023</span> </p>
-          <p class="color color-8 orange"><label>
-              <input type="checkbox" name="myCheckbox" value="B2" class="vedic">
-              B2
-            </label>
-            <strong>Aerospace Project Exhibition</strong>
-            <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span> </span>
-            <span>Date - Feb 16 2023</span> </p>
-          <p class="color color-5 orange"><label>
-              <input type="checkbox" name="myCheckbox" value="B3" class="vedic">
-              B3
-            </label>
-            <strong>RC Aircraft Competition</strong>
-            <span><button type="button" name="myButton">Rs.1000/-</button> <span class="members">1-5 members</span> </span>
-            <span>Date - Feb 17 2023</span> </p>
-          <p class="color color-3 orange"><label>
-              <input type="checkbox" name="myCheckbox" value="B4" class="vedic">
-              B4
-            </label>
-            <strong>SkyHigh- Glider Competition</strong>
-            <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-4 members</span> </span>
-            <span>Date - Feb 18 2023</span> </p>
-          </p>
-          <input style="color: red; display: none;" id="aerodata" type="text" readonly>
-        </div>
-      </section>
-          </div>
-        </div>
-
-  
-
-  <!-- MIT SOE - CIVIL -->
-
-
-  <div class="vishwashanti-sangeet-kala">
-    <div class="items">
-      <h1 class="title">Events in MIT SOE - Civil Engineering</h1>
-      <div class="dash"><img src="../images/dash.png" alt="" /></div>
-
-      <div class="events">
-        <section class="container text-center">
-          <!-- Text Head -->
-    <section class="container text-center">
-    <!-- Text Head -->
-    <div class="container-color">
-      <p class="color color-1">   
-        <label>
-          <input type="checkbox"  value="C1" class="vishwashanti" >
-          C1
-        </label>
-        <strong>CAD-War</strong>
-        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-        <span>Date - Feb 17 2023</span> 
-      </p>
-      <p class="color color-8"><label>
-          <input type="checkbox" value="C2" class="vishwashanti">
-          C2
-        </label>
-        <strong>STADD-War</strong>
-        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-        
-        </button> 
-        <span>Date - Feb 16 2023</span> </p>
-      <p class="color color-5"><label>
-          <input type="checkbox"  value="C3" class="vishwashanti">
-          C3
-        </label>
-        <strong>Concrete Cube Competition</strong>
-        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 3-4 members</span> </span>
-        <span>Date - Feb 16 & 17 2023</span> </p>
-      <p class="color color-3"><label>
-          <input type="checkbox"  value="C4" class="vishwashanti">
-          C4
-        </label>
-        <strong>Innovate</strong>
-        <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">1-3 members</span> </span>
-        <span>Date - Feb 17 2023</span> </p>
-      <p class="color color-6"><label>
-          <input type="checkbox" value="C5" class="vishwashanti">
-          C5
-        </label>
-        <strong>CrossOver-Bridge Comp.</strong>
-
-        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-        <span>Date - Feb 18 2023</span> </p>
-
-       
-        <span>Date - Feb 18 2022</span> </p>
-
-      
-
-
-        <input style="color: red; display: none;" id="civildata" type="text" readonly>
-        
-    </div>
-  </section>
-      </div>
-    </div>
-  </div>
-
-
-        <!-- MIT ECE -->
-
-
-  <div class="vishwashanti-sangeet-kala">
-    <div class="items">
-      <h1 class="title">Events in MIT SOE - Electronic and Communication Engineering</h1>
-      <div class="dash"><img src="../images/dash.png" alt="" /></div>
-
-      <div class="events">
-        <section class="container text-center">
-          <!-- Text Head -->
-
-
-    <section class="container text-center">
-    <!-- Text Head -->
-    
-    <div class="container-color">
-      <p class="color color-1  orange "><label>
-          <input type="checkbox" name="myCheckbox" value="D1"  class="vedic">
-          D1
-        </label>
-        <strong>Innovative Technical Idea</strong>
-        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-3 members</span> </span>
-        <span>Date - Feb 16 2023</span> </p>
-      <p class="color color-8 orange"><label>
-          <input type="checkbox" name="myCheckbox" value="D2" class="vedic">
-          D2
-        </label>
-        <strong>Jigyasa-Project Competition</strong>
-        <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span>1-3 members</span>
-        <span>Date - Feb 16 2023</span> </p>
-      <p class="color color-5 orange"><label>
-          <input type="checkbox" name="myCheckbox" value="D3" class="vedic">
-          D3
-        </label>
-        <strong>4x4 Road Rally Race</strong>
-        <span><button type="button" name="myButton">Rs.50/-</button> <span class="members">Only 1 member</span> </span>
-        <span>Date - Feb 16 2023</span> </p>
-      <p class="color color-3 orange"><label>
-          <input type="checkbox" name="myCheckbox" value="D4" class="vedic">
-          D4
-        </label>
-        <strong>Digicode</strong>
-        <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
-        <span>Date - Feb 16 2023</span> </p>
-      <p class="color color-3 orange"><label>
-          <input type="checkbox" name="myCheckbox" value="D5" class="vedic">
-          D5
-        </label>
-        <strong>Just Shop It</strong>
-        <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1 member</span> </span>
-        <span>Date - Feb 16 2023</span> </p>
-      </p>
-      <input style="color: red; display: none;" id="ecedata" type="text" readonly>
-    </div>
-  </section>
-      </div>
     </div>
 
 
-    <!-- MIT SOE - Mechanical -->
+
+    <!-- MITSOC -->
 
 
     <div class="vishwashanti-sangeet-kala">
       <div class="items">
-        <h1 class="title">Events in MIT SOE - Mechanical Engineering</h1>
-        <div class="dash"><img src="../images/dash.png" alt="" /></div>
+        <h1 class="title"  data-aos="fade-up">Events in MIT School of Computing</h1>
+        <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
 
-        <div class="events">
+        <div class="events"  data-aos="fade-up"  data-aos="fade-up">
           <section class="container text-center">
             <!-- Text Head -->
-      <section class="container text-center">
-      <!-- Text Head -->
-      <div class="container-color">
-        <p class="color color-1">   
-          <label>
-            <input type="checkbox"  value="E1" class="vishwashanti" >
-            E1
-          </label>
-          <strong>Battle of the Brains - Quiz</strong>
-          <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 2 members</span> </span>
-          <span>Date - Feb 16 2023</span> 
-        </p>
-        <p class="color color-8"><label>
-            <input type="checkbox" value="E2" class="vishwashanti">
-            E2
-          </label>
-          <strong>Rocket Launcher</strong>
-          <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-2 members</span> </span>
-          
-          </button> 
-          <span>Date - Feb 17 2023</span> </p>
-        <p class="color color-5"><label>
-            <input type="checkbox"  value="E3" class="vishwashanti">
-            E3
-          </label>
-          <strong>Box Cricket</strong>
-          <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5 member</span> </span>
-          <span>Date - Feb 17 & 18 2023</span> </p>
-        <p class="color color-3"><label>
-            <input type="checkbox"  value="E4" class="vishwashanti">
-            E4
-          </label>
-          <strong>Robo Race</strong>
-          <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">2-6 members</span> </span>
-          <span>Date - Feb 18 2023</span> </p>
-        <p class="color color-6"><label>
-            <input type="checkbox" value="E5" class="vishwashanti">
-            E5
-          </label>
-          <strong>CAD Modelling</strong>
-          <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1 member</span> </span>
-          <span>Date - Feb 16 2023</span> </p>
-        
+            <section class="container text-center">
+              <!-- Text Head -->
+              <div class="container-color">
+                <p class="color color-1">
+                  <label>
+                    <input type="checkbox" value="A1" class="computing">
+                    A1
+                  </label>
+                  <strong>Cognisance Valorant</strong>
+                  <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+                <p class="color color-8"><label>
+                    <input type="checkbox" value="A2" class="computing">
+                    A2
+                  </label>
+                  <strong>Cognisance BGMI</strong>
+                  <span><button type="button" name="myButton">Rs. 400/-</button> <span class="members">Only 4
+                      member</span> </span>
 
+                  </button>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+                <p class="color color-5"><label>
+                    <input type="checkbox" value="A3" class="computing">
+                    A3
+                  </label>
+                  <strong>Cognisance Find WayOut</strong>
+                  <span><button type="button" name="myButton">Rs. 300/-</button> <span class="members">Only 3
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+                <p class="color color-3"><label>
+                    <input type="checkbox" value="A4" class="computing">
+                    A4
+                  </label>
+                  <strong>Cognisance PS4</strong>
+                  <span><button type="button" name="myBu tton">Rs. 50/-</button> <span class="members">Only 1
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+                <p class="color color-6"><label>
+                    <input type="checkbox" value="A5" class="computing">
+                    A4
+                  </label>
+                  <strong>Codebreak 4.0</strong>
+                  <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 2-4
+                      member</span> </span>
+                  <span>Date - Feb 15 & 16 2023</span>
+                </p>
+                <p class="color color-4"><label>
+                    <input type="checkbox" value="A6" class="computing">
+                    A6
+                  </label>
+                  <strong>Design Competition </strong>
+                  <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+                <p class="color color-7"><label>
+                    <input type="checkbox" value="A7" class="computing">
+                    A7
+                  </label>
+                  <strong>Cyber Shenanigans</strong>
+                  <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A8" class="computing">
+                    A8
+                  </label>
+                  <strong>Project Expo</strong>
+                  <span><button type="button" name="myButton">Rs. 200/-</button> <span class="members">Only 8-9
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
 
-          <input style="color: red; display: none;" id="mechdata" type="text" readonly>
-          
-      </div>
-    </section>
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A9" class="computing">
+                    A9
+                  </label>
+                  <strong>Brains On Fire</strong>
+                  <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 4-5
+                      member</span> </span>
+                  <span>Date - Feb 17 2023</span>
+                </p>
+
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A10" class="computing">
+                    A10
+                  </label>
+                  <strong>Idea Expo-Poster</strong>
+                  <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1-3
+                      member</span> </span>
+                  <span>Date - Feb 18 2023</span>
+                </p>
+
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A11" class="computing">
+                    A11
+                  </label>
+                  <strong>Idea Expo-Presentation</strong>
+                  <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">Only 1-4
+                      member</span> </span>
+                  <span>Date - Feb 18 2023</span>
+                </p>
+
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A12" class="computing">
+                    A12
+                  </label>
+                  <strong>Techno Escape Room</strong>
+                  <span><button type="button" name="myButton">Rs. 200/-</button> <span class="members">Only 3-5
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A13" class="computing">
+                    A13
+                  </label>
+                  <strong>Tech Improv</strong>
+                  <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1
+                      member</span> </span>
+                  <span>Date - Feb 16 & 17 2023</span>
+                </p>
+
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A14" class="computing">
+                    A14
+                  </label>
+                  <strong>TechTalks</strong>
+                  <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members"></span> </span>
+                  <span>Date - Feb 16, 17 & 18 2023</span>
+                </p>
+
+                <p class="color color-2"><label>
+                    <input type="checkbox" value="A15" class="computing">
+                    A15
+                  </label>
+                  <strong>Capture the motion</strong>
+                  <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1-3
+                      members</span> </span>
+                  <span>Date - Feb 16, 17 & 18 2023</span>
+                </p>
+                <input style="color: red; display: none;" id="Computingdata" type="text" readonly>
+              </div>
+            </section>
         </div>
       </div>
     </div>
 
 
-      <!-- MIT SOE - Bioengineering -->
+
+
+    <!-- MIT - AEROSPACE -->
+
+
+    <div class="vishwashanti-sangeet-kala">
+      <div class="items">
+        <h1 class="title"  data-aos="fade-up">Events in MIT SOE - Aerospace Engineering</h1>
+        <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+
+        <div class="events"  data-aos="fade-up">
+          <section class="container text-center">
+            <!-- Text Head -->
+            <section class="container text-center">
+              <!-- Text Head -->
+              <div class="container-color">
+                <p class="color color-1  orange "><label>
+                    <input type="checkbox" name="myCheckbox" value="B1" class="aero">
+                    B1
+                  </label>
+                  <strong>Astro - Art Competition</strong>
+                  <span><button type="button" name="myButton">Rs. 150/-</button> <span class="members">1-4
+                      members</span> </span>
+                  <span>Date - Feb 16 2023</span>
+                </p>
+                <p class="color color-8 orange"><label>
+                    <input type="checkbox" name="myCheckbox" value="B2" class="aero">
+                    B2
+                  </label>
+                  <strong>Aerospace Project Exhibition</strong>
+                  <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span> </span>
+                  <span>Date - Feb 16 2023</span>
+                </p>
+                <p class="color color-5 orange"><label>
+                    <input type="checkbox" name="myCheckbox" value="B3" class="aero">
+                    B3
+                  </label>
+                  <strong>RC Aircraft Competition</strong>
+                  <span><button type="button" name="myButton">Rs.1000/-</button> <span class="members">1-5
+                      members</span> </span>
+                  <span>Date - Feb 17 2023</span>
+                </p>
+                <p class="color color-3 orange"><label>
+                    <input type="checkbox" name="myCheckbox" value="B4" class="aero">
+                    B4
+                  </label>
+                  <strong>SkyHigh- Glider Competition</strong>
+                  <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-4
+                      members</span> </span>
+                  <span>Date - Feb 18 2023</span>
+                </p>
+                </p>
+                <input style="color: red; display: none;" id="aerodata" type="text" readonly>
+              </div>
+            </section>
+        </div>
+      </div>
+
+
+
+      <!-- MIT SOE - CIVIL -->
+
 
       <div class="vishwashanti-sangeet-kala">
         <div class="items">
-          <h1 class="title">Events in MIT SOE - Bio Engineering Science</h1>
-          <div class="dash"><img src="../images/dash.png" alt="" /></div>
-      
-          <div class="events">
+          <h1 class="title"  data-aos="fade-up">Events in MIT SOE - Civil Engineering</h1>
+          <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+
+          <div class="events"  data-aos="fade-up">
             <section class="container text-center">
               <!-- Text Head -->
-      
-      
-        <section class="container text-center">
-        <!-- Text Head -->
-        
-        <div class="container-color">
-          <p class="color color-1  orange "><label>
-              <input type="checkbox" name="myCheckbox" value="F1"  class="vedic">
-              F1
-            </label>
-            <strong>SciFun(Safari of Science)</strong>
-            <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 3-10 members</span> </span>
-            <span>Date - Feb 16 & 17 2023</span> </p>
-          </p>
-          <input style="color: red; display: none;" id="bioengdata" type="text" readonly>
+              <section class="container text-center">
+                <!-- Text Head -->
+                <div class="container-color">
+                  <p class="color color-1">
+                    <label>
+                      <input type="checkbox" value="C1" class="civil">
+                      C1
+                    </label>
+                    <strong>CAD-War</strong>
+                    <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1
+                        member</span> </span>
+                    <span>Date - Feb 17 2023</span>
+                  </p>
+                  <p class="color color-8"><label>
+                      <input type="checkbox" value="C2" class="civil">
+                      C2
+                    </label>
+                    <strong>STADD-War</strong>
+                    <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1
+                        member</span> </span>
+
+                    </button>
+                    <span>Date - Feb 16 2023</span>
+                  </p>
+                  <p class="color color-5"><label>
+                      <input type="checkbox" value="C3" class="civil">
+                      C3
+                    </label>
+                    <strong>Concrete Cube Competition</strong>
+                    <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 3-4
+                        members</span> </span>
+                    <span>Date - Feb 16 & 17 2023</span>
+                  </p>
+                  <p class="color color-3"><label>
+                      <input type="checkbox" value="C4" class="civil">
+                      C4
+                    </label>
+                    <strong>Innovate</strong>
+                    <span><button type="button" name="myButton">Rs. 0/-</button> <span class="members">1-3
+                        members</span> </span>
+                    <span>Date - Feb 17 2023</span>
+                  </p>
+                  <p class="color color-6"><label>
+                      <input type="checkbox" value="C5" class="civil">
+                      C5
+                    </label>
+                    <strong>CrossOver-Bridge Comp.</strong>
+
+                    <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1
+                        member</span> </span>
+                    <span>Date - Feb 18 2023</span>
+                  </p>
+                  <span>Date - Feb 18 2022</span> </p>
+                  <input style="color: red; display: none;" id="civildata" type="text" readonly>
+                </div>
+              </section>
+          </div>
         </div>
-      </section>
+      </div>
+
+
+      <!-- MIT ECE -->
+
+
+      <div class="vishwashanti-sangeet-kala">
+        <div class="items">
+          <h1 class="title"  data-aos="fade-up">Events in MIT SOE - Electronic and Communication Engineering</h1>
+          <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+
+          <div class="events"  data-aos="fade-up">
+            <section class="container text-center">
+              <!-- Text Head -->
+              <section class="container text-center">
+                <!-- Text Head -->
+                <div class="container-color">
+                  <p class="color color-1  orange "><label>
+                      <input type="checkbox" name="myCheckbox" value="D1" class="ece">
+                      D1
+                    </label>
+                    <strong>Innovative Technical Idea</strong>
+                    <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-3
+                        members</span> </span>
+                    <span>Date - Feb 16 2023</span>
+                  </p>
+                  <p class="color color-8 orange"><label>
+                      <input type="checkbox" name="myCheckbox" value="D2" class="ece">
+                      D2
+                    </label>
+                    <strong>Jigyasa-Project Competition</strong>
+                    <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members"></span>1-3
+                      members</span>
+                    <span>Date - Feb 16 2023</span>
+                  </p>
+                  <p class="color color-5 orange"><label>
+                      <input type="checkbox" name="myCheckbox" value="D3" class="ece">
+                      D3
+                    </label>
+                    <strong>4x4 Road Rally Race</strong>
+                    <span><button type="button" name="myButton">Rs.50/-</button> <span class="members">Only 1
+                        member</span> </span>
+                    <span>Date - Feb 16 2023</span>
+                  </p>
+                  <p class="color color-3 orange"><label>
+                      <input type="checkbox" name="myCheckbox" value="D4" class="ece">
+                      D4
+                    </label>
+                    <strong>Digicode</strong>
+                    <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1
+                        member</span> </span>
+                    <span>Date - Feb 16 2023</span>
+                  </p>
+                  <p class="color color-3 orange"><label>
+                      <input type="checkbox" name="myCheckbox" value="D5" class="ece">
+                      D5
+                    </label>
+                    <strong>Just Shop It</strong>
+                    <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 1
+                        member</span> </span>
+                    <span>Date - Feb 16 2023</span>
+                  </p>
+                  </p>
+                  <input style="color: red; display: none;" id="ecedata" type="text" readonly>
+                </div>
+              </section>
           </div>
         </div>
 
 
+        <!-- MIT SOE - Mechanical -->
 
 
-        <div class="submit-div"> <input id="submit-button" type="submit" value="Submit " /></div>
-            
+        <div class="vishwashanti-sangeet-kala">
+          <div class="items">
+            <h1 class="title"  data-aos="fade-up">Events in MIT SOE - Mechanical Engineering</h1>
+            <div class="dash" data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+
+            <div class="events"  data-aos="fade-up"  data-aos="fade-up">
+              <section class="container text-center">
+                <!-- Text Head -->
+                <section class="container text-center">
+                  <!-- Text Head -->
+                  <div class="container-color">
+                    <p class="color color-1">
+                      <label>
+                        <input type="checkbox" value="E1" class="mech">
+                        E1
+                      </label>
+                      <strong>Battle of the Brains - Quiz</strong>
+                      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 2
+                          members</span> </span>
+                      <span>Date - Feb 16 2023</span>
+                    </p>
+                    <p class="color color-8"><label>
+                        <input type="checkbox" value="E2" class="mech">
+                        E2
+                      </label>
+                      <strong>Rocket Launcher</strong>
+                      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">1-2
+                          members</span> </span>
+
+                      </button>
+                      <span>Date - Feb 17 2023</span>
+                    </p>
+                    <p class="color color-5"><label>
+                        <input type="checkbox" value="E3" class="mech">
+                        E3
+                      </label>
+                      <strong>Box Cricket</strong>
+                      <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">Only 5
+                          member</span> </span>
+                      <span>Date - Feb 17 & 18 2023</span>
+                    </p>
+                    <p class="color color-3"><label>
+                        <input type="checkbox" value="E4" class="mech">
+                        E4
+                      </label>
+                      <strong>Robo Race</strong>
+                      <span><button type="button" name="myButton">Rs. 500/-</button> <span class="members">2-6
+                          members</span> </span>
+                      <span>Date - Feb 18 2023</span>
+                    </p>
+                    <p class="color color-6"><label>
+                        <input type="checkbox" value="E5" class="mech">
+                        E5
+                      </label>
+                      <strong>CAD Modelling</strong>
+                      <span><button type="button" name="myButton">Rs. 100/-</button> <span class="members">Only 1
+                          member</span> </span>
+                      <span>Date - Feb 16 2023</span>
+                    </p>
+                    <input style="color: red; display: none;" id="mechdata" type="text" readonly>
+
+                  </div>
+                </section>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- MIT SOE - Bioengineering -->
+
+        <div class="vishwashanti-sangeet-kala">
+          <div class="items">
+            <h1 class="title"  data-aos="fade-up">Events in MIT SOE - Bio Engineering Science</h1>
+            <div class="dash"  data-aos="fade-up"><img src="../images/dash.png" alt="" /></div>
+
+            <div class="events"  data-aos="fade-up">
+              <section class="container text-center">
+                <!-- Text Head -->
+                <section class="container text-center">
+                  <!-- Text Head -->
+                  <div class="container-color">
+                    <p class="color color-1  orange "><label>
+                        <input type="checkbox" name="myCheckbox" value="F1" class="bioeng">
+                        F1
+                      </label>
+                      <strong>SciFun(Safari of Science)</strong>
+                      <span><button type="button" name="myButton">Rs. 50/-</button> <span class="members">Only 3-10
+                          members</span> </span>
+                      <span>Date - Feb 16 & 17 2023</span>
+                    </p>
+                    </p>
+                    <input style="color: red; display: none;" id="bioengdata" type="text" readonly>
+                  </div>
+                </section>
+            </div>
+          </div>
+          <div class="submit-div"> <input id="submit-button" type="submit" value="Submit " /></div>
+
         </div>
 
   </form>
 
 
 
-        <footer class="padding_4x">
-          <div class="flex">
-            <section class="flex-content padding_1x">
-              <h3>About Us</h3>
-              <a
-                >Persona Fest is amongst the most awaited techno cultural event
-                being organized by the MIT-ADT University.. Read More
-              </a>
-            </section>
-            <section class="flex-content padding_1x">
-              <h3>Qther Links</h3>
-              <a href="#">Patron</a>
-              <a href="#">Register Online</a>
-              <a href="#">Photo Gakkery</a>
-            </section>
-            <section class="flex-content padding_1x">
-              <h3>Important Links</h3>
-              <a href="#">Event Schedule</a>
-              <a href="#">Online Registration Form</a>
-              <a href="#">About MIT ADT University</a>
-            </section>
-            <section class="flex-content padding_1x">
-              <h3>Get In Touch</h3>
-              <a href="#"
-                ><div class="social facebook">
-                  <img src="../images/facebook.png" alt="" /><p>Facebook</p>
-                </div></a
-              >
-              <a href="#"
-                ><div class="social">
-                  <img src="../images/instagram.png" alt="" /><p>Instagram</p>
-                </div></a
-              >
-              <a href="mailto:registration.mitpersonafest@mituniversity.edu.in"
-                ><div class="social">
-                  <img src="../images/gmail.png" alt="" /><p
-                    >registration.mitpersonafest<br>@mituniversity.edu.in</p
-                  >
-                </div></a
-              >
-            </section>
-            <section class="flex-content padding_1x">
-              <h3>Newsletter</h3>
-              <p>You can trust us. we only send promo offers,</p>
-              <fieldset class="fixed_flex email-field">
-                <input
-                  type="email"
-                  name="newsletter"
-                  placeholder="Your Email Address"
-                />
-                <img src="../images/send-icon.png" alt="" />
-              </fieldset>
-            </section>
+  <footer class="padding_4x">
+    <div class="flex">
+      <section class="flex-content padding_1x"  data-aos="fade-left">
+        <h3>About Us</h3>
+        <a>Persona Fest is amongst the most awaited techno cultural event
+          being organized by the MIT-ADT University.. Read More
+        </a>
+      </section>
+      <section class="flex-content padding_1x" data-aos="fade-left" data-aos="fade-left">
+        <h3>Qther Links</h3>
+        <a href="#">Patron</a>
+        <a href="#">Register Online</a>
+        <a href="#">Photo Gakkery</a>
+      </section>
+      <section class="flex-content padding_1x" data-aos="fade-left">
+        <h3>Important Links</h3>
+        <a href="#">Event Schedule</a>
+        <a href="#">Online Registration Form</a>
+        <a href="#">About MIT ADT University</a>
+      </section>
+      <section class="flex-content padding_1x" data-aos="fade-left">
+        <h3>Get In Touch</h3>
+        <a href="#">
+          <div class="social facebook">
+            <img src="../images/facebook.png" alt="" />
+            <p>Facebook</p>
           </div>
-              <p>Copyright ©2023 All rights reserved || website name</p>
-        </footer>
-    </body>
-  </html>
+        </a>
+        <a href="#">
+          <div class="social">
+            <img src="../images/instagram.png" alt="" />
+            <p>Instagram</p>
+          </div>
+        </a>
+        <a href="mailto:registration.mitpersonafest@mituniversity.edu.in">
+          <div class="social">
+            <img src="../images/gmail.png" alt="" />
+            <p>registration.mitpersonafest<br>@mituniversity.edu.in</p>
+          </div>
+        </a>
+      </section>
+      <section class="flex-content padding_1x" data-aos="fade-left">
+        <h3>Newsletter</h3>
+        <p>You can trust us. we only send promo offers,</p>
+        <fieldset class="fixed_flex email-field">
+          <input type="email" name="newsletter" placeholder="Your Email Address" />
+          <img src="../images/send-icon.png" alt="" />
+        </fieldset>
+      </section>
+    </div>
+    <p>Copyright ©2023 All rights reserved || website name</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- INITIALIZE AOS -->
+  <script>
+    AOS.init({
+      once: true,
+      offset:220,
+      duration:800
+    });
+  </script>
+    <script src="../index.js"></script>
+
+</body>
+
+</html>

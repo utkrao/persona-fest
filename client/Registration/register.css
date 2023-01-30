@@ -1,5 +1,89 @@
-nav {
+.toggle {
+  all: unset;
+  background-color: dodgerblue;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-width: 0 3px 3px 0;
+  border-style: solid;
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+.list {
+  background-color: gray;
+  width: 260px;
+  margin-left: 10px;
+  color: #444;
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(8, 40px);
+  border-radius: 5px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.4s;
+}
+
+.list-item:hover {
+
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1px;
+}
+
+
+
+.drop-down-events {
+  width: 175px;
+
   background-color: #291f64;
+  margin: 10px 10px;
+}
+
+
+.list a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins";
+
+}
+
+.toggle:focus::after {
+  transform: rotate(225deg);
+}
+
+.toggle:focus~.list {
+  height: 220px;
+}
+
+.toggle:focus~.list .list-item {
+  transform: translateX(0);
+}
+
+.menu button {
+  width: 220px;
+}
+
+
+
+
+
+
+
+nav {
+  background-color: #291f64 !important;
   position: relative;
 }
 
@@ -25,12 +109,14 @@ nav {
   /* border: 2px solid red; */
   width: 79%;
 }
+
 .participants-div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .participants-details h2 {
   color: black;
   font-size: 1.6rem;
@@ -47,6 +133,7 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+
 .part-bottom-left {
   display: flex;
   width: 70%;
@@ -63,9 +150,9 @@ nav {
 }
 
 .part-bottom-right img {
-  height: 230px;
   width: 230px;
 }
+
 /* //vishwashanti events  */
 
 .vishwashanti-sangeet-kala {
@@ -84,7 +171,7 @@ nav {
 
 .container {
   margin: auto;
-  min-height: 50vh;
+  min-height: 18vh;
   max-width: 250rem;
   padding: 2rem;
   border-radius: 6px;
@@ -113,11 +200,13 @@ nav {
 
   color: #3b3b3b;
 }
+
 .container-color {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
+
 .color {
   color: black;
   display: flex;
@@ -184,6 +273,7 @@ color: black;
 .submit-div {
   width: 74%;
 }
+
 #submit-button {
   /* border: 2px solid red; */
   margin-bottom: 75px;
@@ -209,8 +299,25 @@ color: black;
 }
 
 @media screen and (max-width: 1180px) {
+  .toggle {
+    font-size: 80%;
+  }
+
+  .menu button {
+    width: 170px;
+
+  }
+
+  .list {
+    width: 190px;
+  }
+
   .container-color {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .list a {
+    font-size: 90%;
   }
 
   .submit-div {
@@ -226,9 +333,11 @@ color: black;
     font-size: 18px;
     width: 100%;
   }
+
   .container-color {
     grid-template-columns: 1fr 1fr;
   }
+
   .part-bottom-left input {
     padding: 4px 5px;
   }
@@ -244,9 +353,11 @@ color: black;
   .part-bottom-left input {
     width: 120%;
   }
+
   .title {
     font-size: 15px;
   }
+
   .part-bottom-left input {
     margin: 4px;
   }
@@ -274,10 +385,12 @@ color: black;
 }
 
 @media screen and (max-width: 450px) {
+
   .vishwashanti-sangeet-kala .title {
     line-height: 10px;
     font-size: 10px;
   }
+
   .part-bottom-left input {
     padding: 3px 3px;
   }
@@ -299,9 +412,11 @@ color: black;
     font-size: 10px;
     width: 85%;
   }
+
   .container-color span {
     font-size: 9px;
   }
+
   .container-color {
     gap: 1rem;
   }
