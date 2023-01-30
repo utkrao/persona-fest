@@ -43,7 +43,7 @@ ul {
   background-position: center;
 }
 
-.hero-section::-webkit-scrollbar{
+.hero-section::-webkit-scrollbar {
   display: none;
 }
 
@@ -158,7 +158,7 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
 }
 
 .logo img {
-  width: 40%;
+  width: 55%;
 }
 
 .hero-section {
@@ -1010,8 +1010,6 @@ fieldset {
     justify-content: center;
     gap: 5rem;
   }
-
-
 }
 
 @media (max-width: 920px) {

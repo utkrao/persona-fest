@@ -37,13 +37,10 @@
 }
 
 .list-item:hover {
-
   color: #fff;
   font-weight: 700;
   border-radius: 1px;
 }
-
-
 
 .drop-down-events {
   width: 175px;
@@ -52,35 +49,23 @@
   margin: 10px 10px;
 }
 
-
 .list a {
   text-decoration: none;
   color: black;
   font-family: "Poppins";
-
 }
 
 .toggle:focus::after {
   transform: rotate(225deg);
 }
 
-.toggle:focus~.list {
+.toggle:focus ~ .list {
   height: 220px;
 }
 
-.toggle:focus~.list .list-item {
+.toggle:focus ~ .list .list-item {
   transform: translateX(0);
 }
-
-.menu button {
-  width: 220px;
-}
-
-
-
-
-
-
 
 nav {
   background-color: #291f64 !important;
@@ -298,14 +283,45 @@ color: black;
   color: #000000;
 }
 
+.menu {
+  padding-top: 20px;
+}
+.menu button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 12rem;
+  border: 0;
+  border-radius: 15px;
+  background-color: #372c77;
+}
+
+.toggle-ul {
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.toggle-ul button a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.toggle-ul .active {
+  background-color: white;
+  border: 1px solid #372c77;
+}
+.toggle-ul .active-a {
+  color: #372c77 !important;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1180px) {
   .toggle {
     font-size: 80%;
-  }
-
-  .menu button {
-    width: 170px;
-
   }
 
   .list {
@@ -385,7 +401,6 @@ color: black;
 }
 
 @media screen and (max-width: 450px) {
-
   .vishwashanti-sangeet-kala .title {
     line-height: 10px;
     font-size: 10px;
