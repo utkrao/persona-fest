@@ -1,0 +1,59 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{%static 'images/persona-image.png' %}"
+    />
+    <title>Total Payable || MIT Persona Fest - 2023</title>
+    <!-- <link rel="stylesheet" href="{%static 'css/total_payable.css'%}"> -->
+    <link rel="stylesheet" href="/backend/static/css/total_payable.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <p class="events">
+          <span>Account Name :</span> MIT ADT UNIVERSITY ADTU
+        </p>
+        <p class="events"><span>Bank Name : </span>Bank of India</p>
+        <p class="events">
+          <span> Account Number :</span>
+          062521110000021
+        </p>
+        <p class="events"><span>IFSC Code :</span> BKID0000625</p>
+        <p class="events"><span>Account Type :</span> Saving Bank Account</p>
+        <p class="events"><span>MICR Code : </span> 411013049</p>
+
+        <p class="payable-text">
+          <span>TOTAL AMOUNT</span>
+        </p>
+        <p class="total-amount">{{amount}}</p>
+        <form action="{% url 'success'%}" method="POST">
+          {% csrf_token%}
+          <h3>Enter UTR/UPI Transcation Id</h3>
+          <input
+            type="text"
+            id="Txn_id"
+            name="Txn_id"
+            placeholder="Enter Transaction ID"
+          />
+          <br />
+          <input
+            type="text"
+            id="Txn_id2"
+            name="Txn_id2"
+            placeholder="Re-enter ID"
+          />
+          <br /><br />
+          <input type="submit" value="SUBMIT" placeholder="SUBMIT" />
+        </form>
+        <!-- <button class="pay-btn" ><span>PAY</span> WITH <span>RAZORPAY</span></button> -->
+      </div>
+    </div>
+  </body>
+</html>
