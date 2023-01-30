@@ -18,24 +18,13 @@
     <link rel="stylesheet" href="../styles.css" />
     <script>
         $(document).ready(function () {
-            $('.design').click(function () {
+            $('.management').click(function () {
                 var text = "";
-                $('.design:checked').each(function () {
+                $('.management:checked').each(function () {
                     text += $(this).val() + ",";
                 });
                 text = text.substring(0, text.length - 1);
-                $('#designdata').val(text);
-            })
-        })
-
-        $(document).ready(function () {
-            $('.arts').click(function () {
-                var text = "";
-                $('.arts:checked').each(function () {
-                    text += $(this).val() + ",";
-                });
-                text = text.substring(0, text.length - 1);
-                $('#artsdata').val(text);
+                $('#data').val(text);
             })
         })
     </script>
@@ -70,18 +59,6 @@
     <form action="">
         <div class="participants-div">
             <div class="participants-details">
-                <div class="menu" data-aos="fade-left">
-                    <ul class="toggle-ul">
-                      <button   value=""><a href="./register.html">Cultural</a></button>
-                      <button value=""> <a href="./technical.html">Technical</a></button>
-                      <button  value=""><a  href="./management.html">Management</a></button>
-                      <button class="active" value=""> <a  class="active-a" href="./design.html">Design</a></button>
-                      <button value=""><a href="./food.html">Food Tech</a></button>
-                      <button value=""><a href="./architecture.html">Architecture</a></button>
-                    </ul>
-              
-              
-                  </div>
                 <div class="part-top">
                     <h2>
                         Range of management events hosted by MIT College of Design and MIT Collage of SOFA...
@@ -114,7 +91,7 @@
                             <!-- Text Head -->
                             <div class="container-color">
                                 <p class="color color-1 blue "><label>
-                                        <input type="checkbox" name="myCheckbox" value="K1" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K1" class="management">
                                         K1
                                     </label>
                                     <strong>Poster Design</strong>
@@ -123,7 +100,7 @@
                                     <span>Date - Feb 16 2023</span>
                                 </p>
                                 <p class="color color-8 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K2" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K2" class="management">
                                         K2
                                     </label>
                                     <strong>Lock & Load</strong>
@@ -132,7 +109,7 @@
                                     <span>Date - Feb 16-17 2023</span>
                                 </p>
                                 <p class="color color-5 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K3" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K3" class="management">
                                         K3
                                     </label>
                                     <strong>Life-sized Jenga</strong>
@@ -141,7 +118,7 @@
                                     <span>Date - Feb 16-18 2023</span>
                                 </p>
                                 <p class="color color-3 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K4" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K4" class="management">
                                         K4
                                     </label>
                                     <strong>Slip Tease</strong>
@@ -150,7 +127,7 @@
                                     <span>Date - Feb 16-17 2023</span>
                                 </p>
                                 <p class="color color-6 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K5" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K5" class="management">
                                         K5
                                     </label>
                                     <strong>Color Wheel</strong>
@@ -159,7 +136,7 @@
                                     <span>Date - Feb 16-17 2023</span>
                                 </p>
                                 <p class="color color-4 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K6" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K6" class="management">
                                         K6
                                     </label>
                                     <strong>Yokozun</strong>
@@ -168,7 +145,7 @@
                                     <span>Date - Feb 17-18 2023</span>
                                 </p>
                                 <p class="color color-7 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K7" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K7" class="management">
                                         K7
                                     </label>
                                     <strong>Hunt hints</strong>
@@ -177,7 +154,7 @@
                                     <span>Date - Feb 18 2023</span>
                                 </p>
                                 <p class="color color-2 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K8" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K8" class="management">
                                         K8
                                     </label>
                                     <strong>Ju-gadi</strong>
@@ -186,7 +163,7 @@
                                     <span>Date - Feb 16-17 2023</span>
                                 </p>
                                 <p class="color color-2 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K9" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K9" class="management">
                                         K9
                                     </label>
                                     <strong>Bamboo Weave</strong>
@@ -195,7 +172,7 @@
                                     <span>Date - Feb 18 2023</span>
                                 </p>
                                 <p class="color color-2 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K10" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K10" class="management">
                                         K10
                                     </label>
                                     <strong>Clay Modelling</strong>
@@ -204,7 +181,7 @@
                                     <span>Date - Feb 16 2023</span>
                                 </p>
                                 <p class="color color-2 blue"><label>
-                                        <input type="checkbox" name="myCheckbox" value="K11" class="design">
+                                        <input type="checkbox" name="myCheckbox" value="K11" class="management">
                                         K11
                                     </label>
                                     <strong>Flea Market</strong>
@@ -216,7 +193,6 @@
                                
                             </div>
                         </section>
-                        <input style="color: red; display: none;" id="designdata" type="text" readonly>
                 </div>
             </div>
             <div class="vishwashanti-sangeet-kala">
@@ -230,7 +206,7 @@
                               <!-- Text Head -->
                               <div class="container-color">
                                   <p class="color color-1  orange "><label>
-                                          <input type="checkbox" name="myCheckbox" value="L1" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L1" class="management">
                                           L1
                                       </label>
                                       <strong>THE ART TRIBE</strong>
@@ -239,7 +215,7 @@
                                       <span>Date - Feb 6-13 2023</span>
                                   </p>
                                   <p class="color color-8 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L2" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L2" class="management">
                                           L2
                                       </label>
                                       <strong>ZURI</strong>
@@ -248,7 +224,7 @@
                                       <span>Date - Feb 16-18 2023</span>
                                   </p>
                                   <p class="color color-5 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L3" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L3" class="management">
                                           L3
                                       </label>
                                       <strong>ART मेला</strong>
@@ -257,7 +233,7 @@
                                       <span>Date - Feb 16-18 2023</span>
                                   </p>
                                   <p class="color color-3 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L4" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L4" class="management">
                                           L4
                                       </label>
                                       <strong>Vishwalalit - On the spot painting</strong>
@@ -266,7 +242,7 @@
                                       <span>Date - Feb 15 2023</span>
                                   </p>
                                   <p class="color color-6 orange"><label>
-                                          <input type="checkbox" name="myCheckbox" value="L5" class="arts">
+                                          <input type="checkbox" name="myCheckbox" value="L5" class="management">
                                           L5
                                       </label>
                                       <strong>Vishwalalit Online Competition - PAINTING SCULPTURE PHOTOGRAPHY</strong>
@@ -278,7 +254,7 @@
                           </section>
                   </div>
               </div>
-            <input style="color: red; display: none;" id="artsdata" type="text" readonly>
+            <input style="color: red; display: none;" id="data" type="text" readonly>
             <div class="submit-div"> <input id="submit-button" type="submit" value="Submit " /></div>
         </div>
 
