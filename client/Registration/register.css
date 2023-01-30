@@ -304,6 +304,13 @@ color: black;
   flex-wrap: wrap;
 }
 
+.toggle-ul button:hover {
+  cursor: default;
+}
+.toggle-ul a:hover {
+  cursor: pointer;
+}
+
 .toggle-ul button a {
   color: white;
   text-decoration: none;
