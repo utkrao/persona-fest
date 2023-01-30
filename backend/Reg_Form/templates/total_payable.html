@@ -50,10 +50,26 @@
             placeholder="Re-enter ID"
           />
           <br /><br />
-          <input type="submit" value="SUBMIT" placeholder="SUBMIT" />
+          <input
+            type="submit"
+            value="SUBMIT"
+            placeholder="SUBMIT"
+            onclick="return Validate()"
+          />
         </form>
         <!-- <button class="pay-btn" ><span>PAY</span> WITH <span>RAZORPAY</span></button> -->
       </div>
     </div>
+    <script type="text/javascript">
+      function Validate() {
+        var password = document.getElementById("Txn_id").value;
+        var confirmPassword = document.getElementById("Txn_id2").value;
+        if (password != confirmPassword) {
+          alert("Transaction ID do not match.");
+          return false;
+        }
+        return true;
+      }
+    </script>
   </body>
 </html>
